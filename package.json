@@ -1,0 +1,22 @@
+{
+  "name": "cartographies.sonores",
+  "version": "0.1.0",
+  "description": "Paysages géographiques et sonores des langues du monde",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rcln/cartographies.sonores.git"
+  },
+  "author": "Caio Corro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rcln/cartographies.sonores/issues"
+  },
+  "homepage": "https://github.com/rcln/cartographies.sonores",
+  "dependencies": {
+    "express": "^4.11.1"
+  }
+}
