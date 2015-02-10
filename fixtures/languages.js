@@ -1,4 +1,5 @@
-var data_list = [{"id":1,"language":"Bislama","author":"Andrew Rose","lexifier":"Gujarati","region":"Afrique","lon":"107.86","lat":"30.02035"},
+exports.Language = [
+{"id":1,"language":"Bislama","author":"Andrew Rose","lexifier":"Gujarati","region":"Afrique","lon":"107.86","lat":"30.02035"},
 {"id":2,"language":"Amharic","author":"Lawrence Kim","lexifier":"Greek","region":"Amérique","lon":"-72.31428","lat":"18.23231"},
 {"id":3,"language":"Malay","author":"Brian Hanson","lexifier":"Indonesian","region":"Afrique","lon":"-125.54635","lat":"48.94153"},
 {"id":4,"language":"Malay","author":"Maria Holmes","lexifier":"West Frisian","region":"Océanie","lon":"106.43834","lat":"20.3881"},
@@ -97,4 +98,5 @@ var data_list = [{"id":1,"language":"Bislama","author":"Andrew Rose","lexifier":
 {"id":97,"language":"Yiddish","author":"Dennis Dean","lexifier":"Dhivehi","region":"Antarctique","lon":"31.1669","lat":"30.97063"},
 {"id":98,"language":"Japanese","author":"Evelyn Reyes","lexifier":"Kashmiri","region":"Antarctique","lon":"123.1225","lat":"9.5117"},
 {"id":99,"language":"Tetum","author":"Kelly Simmons","lexifier":"Telugu","region":"Afrique","lon":"109.19239","lat":"28.31741"},
-{"id":100,"language":"Quechua","author":"William Williamson","lexifier":"New Zealand Sign Language","region":"Afrique","lon":"90.64403","lat":"22.68759"}];
+{"id":100,"language":"Quechua","author":"William Williamson","lexifier":"New Zealand Sign Language","region":"Afrique","lon":"90.64403","lat":"22.68759"}
+];

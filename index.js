@@ -1,6 +1,7 @@
-
 var express = require('express');
 var swig = require('swig');
+
+var db = require('./db');
 
 var app = express();
 
@@ -18,7 +19,10 @@ app.get('/', function(req, res) {
 
 app.get('/data', function(req, res) {
     res.contentType('json');
-    res.send({ some: "stuff" });
+    db.Language.find({}, {_id: 0}).sort('id').exec(function(err, languages) {
+        if (err) throw err;
+        res.send(languages);
+    });
 });
 
 app.listen(8080);

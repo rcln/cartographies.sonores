@@ -6,17 +6,27 @@
 
 var LanguageStore = (function() {
     var Store = function () {
-        this._data = Immutable.fromJS(data_list);
-        this._displayed = this._data.map(function() { return true; })
+        this.load([]);
+    };
+    Store.prototype = new EventEmitter();
+
+    Store.prototype.load = function (data) {
+        this._data = Immutable.fromJS(data);
+        this._displayed = this._data.map(function() { return true; });
 
         this._filters = Immutable.Map({});
-        this._columns = this._data.get(0).keySeq();
+
+        if (this._data.count() == 0)
+            this._columns = Immutable.List();
+        else
+            this._columns = this._data.get(0).keySeq();
 
         this._columns.forEach(function (c) {
             this._filters = this._filters.set(c, "");
         }.bind(this));
+
+        this.trigger('update');
     };
-    Store.prototype = new EventEmitter();
 
     Store.prototype.getDisplay = function () {
         return this._displayed;
