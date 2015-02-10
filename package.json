@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/rcln/cartographies.sonores",
   "dependencies": {
-    "express": "^4.11.1"
+    "express": "^4.11.1",
+    "swig": "^1.4.2"
   }
 }
