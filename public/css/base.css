@@ -2,7 +2,7 @@ body {
   padding-top: 50px;
 }
 
-#content-map {
+.content-map {
   margin-top: 40px;
 }
 
@@ -10,6 +10,6 @@ body {
   height: 400px;
 }
 
-#content-list {
+.content-list {
   padding: 40px 15px;
 }
