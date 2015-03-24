@@ -21,13 +21,20 @@ $(function () {
                 return (
                             <div>
                                 <div style={s1}>
-                                    <div className="content-map"><LanguageMap.view className="content-map" /></div>
-                                    <div className="content-list"><LanguageList.view className="content-list" /></div>
+                                    <h3>Langues</h3>
+                                    <div className="row">
+                                        <div className="col-md-12">
+                                            <div className="content-panel"><LanguageMap.view className="content-map" /></div>
+                                        </div>
+                                        <div className="col-md-12 mt">
+                                            <div className="content-panel"><LanguageList.view className="content-list" /></div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div style={s2}>
                                     <LanguageDetails.view />
                                 </div>
-                           </div>
+                            </div>
                        );
             },
 
@@ -38,6 +45,9 @@ $(function () {
                     this.setState({showList: false});
             }
         });
-        React.render(<App />, document.getElementById('content'));
+        React.render(<App />, document.getElementById('data-content'));
+
+        // remove this
+        Actions.app.showDetails('1');
     });
 });

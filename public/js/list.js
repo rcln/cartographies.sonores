@@ -69,7 +69,7 @@ var LanguageList = (function (Stores, Actions, Dispatcher) {
             }).toArray();
 
             return (
-                    <table>
+                    <table className="table">
                         <TableRow header={true} items={props.columns} />
                         <tr>{search_row}</tr>
                         {rows}

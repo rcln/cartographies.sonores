@@ -8,28 +8,33 @@
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+    <link href="dashgum/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="dashgum/css/style.css" rel="stylesheet">
+    <link href="dashgum/css/style-responsive.css" rel="stylesheet">
+
     <link href="css/base.css" rel="stylesheet">
 
   </head>
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Cartographies Sonores</a>
-        </div>
-      </div>
-    </nav>
 
-    <div class="container" id="content">
-      {% block content %}
-      {% endblock %}
-    </div><!-- /.container -->
+  <section id="container" >
+        <header class="header black-bg">
+            <a href="index.html" class="logo"><b>Cartographies Sonores</b></a>
+        </header>
+      
+      
+      <!--main content start-->
+      <section id="main-content">
+          <section class="wrapper">
+            <div id="data-content">
+                {% block content %}
+                {% endblock %}
+            <div>
+        </section><! --/wrapper -->
+      </section><!-- /MAIN CONTENT -->
+
+  </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -39,7 +44,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/immutable/3.6.2/immutable.min.js"></script>
     <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/EventEmitter/4.2.11/EventEmitter.min.js"></script>
-    
+
     <script src="js/dispatcher.js"></script>
 
     {% block javascript %}
