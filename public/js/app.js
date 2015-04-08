@@ -1,5 +1,5 @@
 $(function () {
-    $.get('/data', function(languages) {
+    $.get('data', function(languages) {
         Stores.language.load(languages);
 
         var App = React.createClass({
@@ -48,6 +48,6 @@ $(function () {
         React.render(<App />, document.getElementById('data-content'));
 
         // remove this
-        Actions.app.showDetails('1');
+        //Actions.app.showDetails('1');
     });
 });

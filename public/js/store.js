@@ -112,7 +112,7 @@ var Stores = (function (Dispatcher) {
                     } else {
                         console.log('Retrieving from server :' + str_id);
                         this.data = null;
-                        $.get('/data/' + str_id, function(data) {
+                        $.get('data/' + str_id, function(data) {
                             this.cache = this.cache.set(str_id, Immutable.fromJS(data));
                             Actions.app.showDetails(payload.action.language_id);
                         }.bind(this));
