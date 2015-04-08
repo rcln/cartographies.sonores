@@ -16,7 +16,12 @@ var LanguageMap = (function (Stores, Actions, Dispatcher) {
 
             this._markers = Stores.language.getAll().map(function (row) {
                 var marker = L.marker([row.get('lat'), row.get('lon')]).addTo(map);
-                marker.bindPopup(row.get('language'));
+                marker.bindPopup(
+                    '<div onClick="Actions.app.showDetails(' + row.get('id') + ');">'+
+                    '<b>' + row.get('language') + '</b><br />' + 
+                    'Click for more information' + 
+                    '</div>'
+                );
 
                 return marker;
             }.bind(this));
