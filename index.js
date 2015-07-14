@@ -28,17 +28,71 @@ app.get('/rcln/labex-efl/cartographies/', function(req, res) {
 app.get('/rcln/labex-efl/cartographies/data/:id', function(req, res) {
     res.contentType('json');
 
-    db.Language.findOne({id: req.params.id}, {_id: 0, __v: 0}, function(err, data) {
+    db.query('SELECT * FROM language WHERE id=' + req.params.id, function(err, rows) {
         if (err) throw err;
-        res.send(data);
-    });
+
+        ret = rows[0]
+        db.query( 
+            'SELECT language_author.author_id, language_author.language_id, author.name, author.email, author.about ' +
+            'FROM language_author ' +
+            'INNER JOIN author ON language_author.author_id=author.id ' +
+            'WHERE language_author.language_id=' + req.params.id,
+            function(err, rows) {
+            if (err) throw err;
+
+            authors = [];
+            for (var i = 0; i < rows.length ; i++)
+            {
+                authors.push({
+                    name: rows[i].name,
+                    email: rows[i].email,
+                    about: rows[i].about
+                });
+            }
+
+            ret.authors = authors
+
+            res.send(ret);
+        });
+    })
 });
 
 app.get('/rcln/labex-efl/cartographies/data', function(req, res) {
     res.contentType('json');
-    db.Language.find({}, {_id: 0, __v: 0}).sort('id').exec(function(err, languages) {
+    db.query('SELECT language_author.author_id, language_author.language_id, author.name FROM language_author INNER JOIN author ON language_author.author_id=author.id;', function(err, rows) {
         if (err) throw err;
-        res.send(languages);
+
+        authors = Object();
+        for (var i = 0; i < rows.length ; i++)
+        {
+            lid = rows[i].language_id;
+            name = rows[i].name
+            if (lid in authors)
+                authors[lid] += ", " + name;
+            else
+                authors[lid] = name;
+        }
+    
+        db.query('SELECT * FROM language', function(err, rows) {
+            languages = [];
+
+            for (var i = 0 ; i < rows.length ; i ++) {
+                row = rows[i];
+                languages.push({
+                    id: row.id,
+                    name: row.name,
+                    glottonym: (row.glottonym == null ? "-" : row.glottonym),
+                    family: (row.family == null ? "-" : row.family),
+                    country: (row.country == null ? "-" : row.country),
+                    lon: null,
+                    lat: null,
+                    author: authors[row.id]
+                });
+            }
+
+            res.send(languages);
+
+        });
     });
 });
 

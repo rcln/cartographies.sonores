@@ -13,10 +13,7 @@ var LanguageList = (function (Stores, Actions, Dispatcher) {
                 if (props.header)
                     return <th>{v}</th>;
                 else
-                    if (props.callback && col == 1)
-                        return <td onClick={function () { props.callback(props.items.get(0)) }}>{v}</td>
-                    else
-                        return <td>{v}</td>;
+                    return <td onClick={function () { props.callback(props.item_id) }}>{v}</td>
             }).toArray();
 
             var style = { display: props.display ? 'table-row' : 'none' };
@@ -55,11 +52,12 @@ var LanguageList = (function (Stores, Actions, Dispatcher) {
                 var items = props.columns.map(function(c) {
                     return r.get(c);
                 });
-        
+       
                 return <TableRow 
                             items={items} 
                             callback={props.callback}
-                            display={state.display.get(i)} />
+                            display={state.display.get(i)}
+                            item_id={r.get('id')} />
             }).toArray();
 
             var _filter = this._filter;
@@ -70,7 +68,7 @@ var LanguageList = (function (Stores, Actions, Dispatcher) {
 
             return (
                     <table className="table">
-                        <TableRow header={true} items={props.columns} />
+                        <TableRow header={true} items={props.column_names} display={true}/>
                         <tr>{search_row}</tr>
                         {rows}
                     </table>
@@ -96,7 +94,12 @@ var LanguageList = (function (Stores, Actions, Dispatcher) {
                 Actions.app.showDetails(id);
             };
             return (
-                    <Table data={this.state.data} callback={callback} columns={Immutable.List(['id', 'language', 'author', 'lexifier', 'region'])} />
+                    <Table
+                        data={this.state.data}
+                        callback={callback}
+                        columns={Immutable.List(['name', 'glottonym', 'country', 'family', 'author'])}
+                        column_names={Immutable.List(['Langue', 'Glottonyme', 'Pays', 'Famille', 'Auteur(s)'])}
+                    />
                    );
         }
     });

@@ -1,19 +1,13 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
-
-var Language = new Schema({
-    id: Number,
-    language: String,
-    author: String,
-    lexifier: String,
-    region: String,
-    lon: String,
-    lat: String
+var mysql      = require('mysql');
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'root',
+  password : 'root',
+  database : 'cartographies'
 });
-
-mongoose.Language = mongoose.model('Language', Language);
-
-mongoose.connect('mongodb://localhost/cartographie', function(err) {
+ 
+connection.connect(function(err) {
     if (err) throw err;
 });
-module.exports = mongoose;
+
+module.exports = connection;

@@ -14,7 +14,10 @@ var LanguageMap = (function (Stores, Actions, Dispatcher) {
                     }).addTo(map);
 
 
-            this._markers = Stores.language.getAll().map(function (row) {
+            this._markers = Stores.language.getAll().filter(function(row) {
+                return row.get('lat') != null && row.get('lon') != null;
+            }).map(function (row) {
+                console.log("lat: " + row.get('lat'));
                 var marker = L.marker([row.get('lat'), row.get('lon')]).addTo(map);
                 marker.bindPopup(
                     '<div onClick="Actions.app.showDetails(' + row.get('id') + ');">'+

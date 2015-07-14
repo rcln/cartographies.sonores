@@ -1,6 +1,54 @@
 var LanguageDetails = (function (Stores, Actions, Dispatcher) {
     var module = {};
 
+    AuthorView = React.createClass({
+        render: function() {
+
+            array = this.props.authors.map(function(author) {
+                name = author.get('name');
+
+                if (author.get('about').length > 0) 
+                {
+                    return (
+                        <div>
+                            <p>{ name }</p>
+                            <div dangerouslySetInnerHTML={{__html: markdown.toHTML(author.get('about')) }} />
+                        </div>
+                    );
+                }
+                else
+                    return <div><p>{ name }</p></div>;
+            }).toArray();
+
+            return (
+                <div className="showback">
+                    <h4>Auteur</h4>
+                    { array }
+                </div>
+            )
+        }
+    });
+
+    DetailView = React.createClass({
+        render: function () {
+            lis = [];
+            lis.push(<li>Nom : { this.props.data.get('name') }</li>);
+            if (this.props.data.get('glottonym') != null)
+                lis.push(<li>Glottonyme : { this.props.data.get('glottonym') }</li>);
+            if (this.props.data.get('country') != null)
+                lis.push(<li>Pays : { this.props.data.get('country') }</li>);
+            if (this.props.data.get('family') != null)
+                lis.push(<li>Famille : { this.props.data.get('family') }</li>);
+
+            return (
+                <div className="showback">
+                    <h4>Détails</h4>
+                    <ul>{ lis }</ul>
+                </div>
+            );
+        }
+    });
+
     module.view = React.createClass({
         getInitialState: function () {
             return this.getState();
@@ -24,24 +72,16 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
                                     <div className="col-lg-9">
                                         <p onClick={ function () { Actions.app.showList() } }>
                                             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                            Retourner à la liste des langues
+                                            &lt; Retourner à la liste des langues
                                         </p>
-                                        <h3>{ this.state.language }</h3>
+                                        <h3>{ this.state.name }</h3>
 
-                                        <p>Cette partie pourra contenir du texte, des images, des enregistrements sonores, ...</p>
+                                        <div dangerouslySetInnerHTML={{__html: markdown.toHTML(this.state.content) }} />
 
                                     </div>
                                     <div className="col-lg-3">
-                                        <div className="showback">
-                                            <h4>Auteur</h4>
-                                            <p>{ this.state.authors }</p>
-                                        </div>
-                                        <div className="showback">
-                                            <h4>Résumé</h4>
-                                        </div>
-                                        <div className="showback">
-                                            <h4>Sources</h4>
-                                        </div>
+                                        <DetailView data={ this.state.data } />
+                                        <AuthorView authors={ this.state.authors } />
                                     </div>
                                 </div>
                             </div>
@@ -61,8 +101,10 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
                 return {
                     language_id: Stores.details.language_id, 
                     loading: false, 
-                    language: Stores.details.data.get('language'),
-                    authors: Stores.details.data.get('author')
+                    data: Stores.details.data,
+                    content: Stores.details.data.get('content'),
+                    name: Stores.details.data.get('name'),
+                    authors: Stores.details.data.get('authors')
                 };
             }
         }
