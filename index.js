@@ -11,9 +11,9 @@ app.set('views', __dirname + '/views');
 app.set('view cache', true);
 swig.setDefaults({ cache: false });
 
-app.use("/rcln/labex-efl/cartographies/css", express.static('public/css'));
-app.use("/rcln/labex-efl/cartographies/dashgum", express.static('public/dashgum'));
-app.use("/rcln/labex-efl/cartographies/js", express.static('public/js'));
+app.use("/rcln/labex-efl/cartographies/css", express.static(__dirname + '/public/css'));
+app.use("/rcln/labex-efl/cartographies/dashgum", express.static(__dirname + '/public/dashgum'));
+app.use("/rcln/labex-efl/cartographies/js", express.static(__dirname + '/public/js'));
 
 /*
 app.use(function(req, res, next) {
