@@ -10,6 +10,12 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
+SET FOREIGN_KEY_CHECKS=0; 
+DROP TABLE IF EXISTS `author`;
+DROP TABLE IF EXISTS `language`;
+DROP TABLE IF EXISTS `language_author`;
+SET FOREIGN_KEY_CHECKS=1; 
+
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -26,7 +32,6 @@ SET time_zone = "+00:00";
 -- Structure de la table `author`
 --
 
-DROP TABLE IF EXISTS `author`;
 CREATE TABLE IF NOT EXISTS `author` (
   `id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_bin NOT NULL,
@@ -59,7 +64,6 @@ INSERT INTO `author` (`id`, `name`, `email`, `about`) VALUES
 -- Structure de la table `language`
 --
 
-DROP TABLE IF EXISTS `language`;
 CREATE TABLE IF NOT EXISTS `language` (
   `id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_bin NOT NULL,
@@ -123,7 +127,6 @@ INSERT INTO `language` (`id`, `name`, `glottonym`, `family`, `country`, `positio
 -- Structure de la table `language_author`
 --
 
-DROP TABLE IF EXISTS `language_author`;
 CREATE TABLE IF NOT EXISTS `language_author` (
   `author_id` int(11) NOT NULL,
   `language_id` int(11) NOT NULL
@@ -225,3 +228,4 @@ ALTER TABLE `language_author`
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
