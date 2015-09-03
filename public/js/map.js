@@ -17,12 +17,23 @@ var LanguageMap = (function (Stores, Actions, Dispatcher) {
             this._markers = Stores.language.getAll().filter(function(row) {
                 return row.get('lat') != null && row.get('lon') != null;
             }).map(function (row) {
-                console.log("lat: " + row.get('lat'));
                 var marker = L.marker([row.get('lat'), row.get('lon')]).addTo(map);
+                console.log(row.get('audio'));
+                if (row.get('audio') != null) {
+                    audio = '<hr /><div><audio controls="controls" id="player" name="player">' +
+                            '<source src="audio/' + row.get('audio') + '" type="audio/mpeg"/>' + 
+                            '</audio></div>';
+                } else {
+                    audio = '';
+                }
+
                 marker.bindPopup(
-                    '<div onClick="Actions.app.showDetails(' + row.get('id') + ');">'+
-                    '<b>' + row.get('language') + '</b><br />' + 
-                    'Click for more information' + 
+                    '<div>' +
+                        '<div onClick="Actions.app.showDetails(' + row.get('id') + ');">'+
+                        '<b>' + row.get('name') + '</b>' + 
+                        ' - Click for more information' + 
+                        '</div>' +
+                        audio +
                     '</div>'
                 );
 
