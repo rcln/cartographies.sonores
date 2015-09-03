@@ -11,9 +11,10 @@ app.set('views', __dirname + '/views');
 app.set('view cache', true);
 swig.setDefaults({ cache: false });
 
-app.use("/rcln/labex-efl/cartographies/css", express.static(__dirname + '/public/css'));
-app.use("/rcln/labex-efl/cartographies/dashgum", express.static(__dirname + '/public/dashgum'));
-app.use("/rcln/labex-efl/cartographies/js", express.static(__dirname + '/public/js'));
+app.use("/rcln/labex-efl/cartographies/css", express.static(__dirname + 'public/css'));
+app.use("/rcln/labex-efl/cartographies/dashgum", express.static(__dirname + 'public/dashgum'));
+app.use("/rcln/labex-efl/cartographies/js", express.static(__dirname + 'public/js'));
+app.use("/rcln/labex-efl/cartographies/audio", express.static(__dirname + 'public/audio'));
 
 /*
 app.use(function(req, res, next) {
@@ -78,15 +79,26 @@ app.get('/rcln/labex-efl/cartographies/data', function(req, res) {
 
             for (var i = 0 ; i < rows.length ; i ++) {
                 row = rows[i];
+
+                if (row.position != null && row.position.trim().length > 0) {
+                    l = row.position.split(",");
+                    lat = parseFloat(l[0]);
+                    lon = parseFloat(l[1]);
+                } else {
+                    lon = null;
+                    lat = null;
+                }
+
                 languages.push({
                     id: row.id,
                     name: row.name,
                     glottonym: (row.glottonym == null ? "-" : row.glottonym),
                     family: (row.family == null ? "-" : row.family),
                     country: (row.country == null ? "-" : row.country),
-                    lon: null,
-                    lat: null,
-                    author: authors[row.id]
+                    lon: lon,
+                    lat: lat,
+                    author: authors[row.id],
+                    audio: row.audio
                 });
             }
 

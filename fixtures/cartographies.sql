@@ -1,13 +1,12 @@
 -- phpMyAdmin SQL Dump
--- version 4.4.11
+-- version 4.4.13.1
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Mar 14 Juillet 2015 à 21:06
--- Version du serveur :  10.0.20-MariaDB-log
--- Version de PHP :  5.6.11
+-- Généré le :  Jeu 03 Septembre 2015 à 10:02
+-- Version du serveur :  10.0.21-MariaDB-log
+-- Version de PHP :  5.6.12
 
-SET FOREIGN_KEY_CHECKS=0;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
@@ -68,53 +67,55 @@ CREATE TABLE IF NOT EXISTS `language` (
   `family` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `country` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `position` varchar(255) COLLATE utf8_bin DEFAULT NULL,
-  `content` text COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+  `content` text COLLATE utf8_bin NOT NULL,
+  `audio` varchar(255) COLLATE utf8_bin DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Contenu de la table `language`
 --
 
-INSERT INTO `language` (`id`, `name`, `glottonym`, `family`, `country`, `position`, `content`) VALUES
-(1, 'Saami de Lule', NULL, NULL, NULL, NULL, 'Ressources en ligne :\r\n\r\n* [Nuoraj TV](https://www.youtube.com/channel/UClOQ9tyGfUrHauclHDezq8A)\r\n* [Saami culture](http://www.visitnordkyn.com/)'),
-(2, 'Ghul', NULL, NULL, NULL, NULL, ''),
-(3, 'Avar', NULL, NULL, NULL, NULL, ''),
-(4, 'Budugh', NULL, NULL, NULL, NULL, ''),
-(5, 'Dargi', NULL, NULL, NULL, NULL, ''),
-(6, 'Hinuq', NULL, NULL, NULL, NULL, ''),
-(7, 'Kryz', NULL, NULL, NULL, NULL, ''),
-(8, 'Kubachi', NULL, NULL, NULL, NULL, ''),
-(9, 'Lak', NULL, NULL, NULL, NULL, ''),
-(10, 'Lezgi', NULL, NULL, NULL, NULL, ''),
-(11, 'Rutul', NULL, NULL, NULL, NULL, ''),
-(12, 'Tabasaran', NULL, NULL, NULL, NULL, ''),
-(13, 'Tchétchène', NULL, NULL, NULL, NULL, ''),
-(14, 'Tindi', NULL, NULL, NULL, NULL, ''),
-(15, 'Tsakhur', NULL, NULL, NULL, NULL, ''),
-(16, 'Tsez', NULL, NULL, NULL, NULL, ''),
-(17, 'Udi', NULL, NULL, NULL, NULL, ''),
-(18, 'Gbaya', NULL, NULL, NULL, NULL, 'Ressources :\r\n\r\n * Virelangues (conscience phonologique à partir des jeux de mots)\r\n * Vidéos: les paroles du soufflet de forge (comptes)\r\n * Canal U\r\n * Livre didactique pour enfants: le sillabaire'),
-(19, 'Bambara', NULL, NULL, NULL, NULL, 'Ressources :\r\n\r\n * Dictionnaire en ligne\r\n * Corpus éléctronique de textes (presse, littérature orale, légale)\r\n * Google corpus bambara reference\r\n * Griots, bardes, tradition orale, épique\r\n * Photos et vidéos de la fête de publication du dictionnaire\r\n * Concordancier, dictionnaire'),
-(20, 'Malinke', NULL, NULL, NULL, NULL, ''),
-(21, 'Dan', NULL, NULL, NULL, NULL, '* Vidéos sur les tons (langue championne du monde en tons) '),
-(22, 'Goo', NULL, NULL, NULL, NULL, 'Nouvelle langue: on vient de la découvrir, compréhensible avec les langues voisines, mais système phonologique pas de tout semblable aux voisins, culture propre, ses locuteurs la considère comme une lange différente, Côte d''Ivoire, Guinée\r\n'),
-(23, 'NKO', NULL, NULL, NULL, NULL, '* Livres pour enfants'),
-(24, 'Arabe yemenite', NULL, NULL, NULL, NULL, '* étude sur la maison yemenite (préposition spatiales) '),
-(25, 'Maya préhispanique', NULL, NULL, NULL, NULL, '* images de gliphes maya avec commentaires '),
-(26, 'Hausa', NULL, NULL, NULL, NULL, ''),
-(27, 'Zaa', NULL, NULL, NULL, NULL, ''),
-(28, 'Pidgin naja', NULL, NULL, NULL, NULL, ''),
-(29, 'Catalan', NULL, NULL, NULL, NULL, 'Analyse des structures syntaxiques dans les trois langues à partir des descriptions orales alignées des locuteurs qui décrivent la même histoire d''une grenouille\r\n'),
-(30, 'Espagnol', NULL, NULL, NULL, NULL, 'Analyse des structures syntaxiques dans les trois langues à partir des descriptions orales alignées des locuteurs qui décrivent la même histoire d''une grenouille'),
-(31, 'Italien', NULL, NULL, NULL, NULL, 'Analyse des structures syntaxiques dans les trois langues à partir des descriptions orales alignées des locuteurs qui décrivent la même histoire d''une grenouille'),
-(32, 'Koalib', NULL, NULL, NULL, NULL, ''),
-(33, 'Casamançais', NULL, NULL, NULL, NULL, ''),
-(34, 'Capverdien', NULL, NULL, NULL, NULL, ''),
-(35, 'Occitan', NULL, NULL, NULL, NULL, ''),
-(36, 'Arménien', NULL, NULL, NULL, NULL, ''),
-(37, 'Iwaidja', NULL, NULL, 'Australie', NULL, ''),
-(38, 'Mawng', NULL, NULL, 'Australie', NULL, ''),
-(39, 'Gunwinggu', NULL, NULL, 'Australie', NULL, '');
+INSERT INTO `language` (`id`, `name`, `glottonym`, `family`, `country`, `position`, `content`, `audio`) VALUES
+(1, 'Saami de Lule', NULL, NULL, NULL, NULL, 'Ressources en ligne :\r\n\r\n* [Nuoraj TV](https://www.youtube.com/channel/UClOQ9tyGfUrHauclHDezq8A)\r\n* [Saami culture](http://www.visitnordkyn.com/)', NULL),
+(2, 'Ghul', NULL, NULL, NULL, NULL, '', NULL),
+(3, 'Avar', NULL, NULL, NULL, NULL, '', NULL),
+(4, 'Budugh', NULL, NULL, NULL, NULL, '', NULL),
+(5, 'Dargi', NULL, NULL, NULL, NULL, '', NULL),
+(6, 'Hinuq', NULL, NULL, NULL, NULL, '', NULL),
+(7, 'Kryz', NULL, NULL, NULL, NULL, '', NULL),
+(8, 'Kubachi', NULL, NULL, NULL, NULL, '', NULL),
+(9, 'Lak', NULL, NULL, NULL, NULL, '', NULL),
+(10, 'Lezgi', NULL, NULL, NULL, NULL, '', NULL),
+(11, 'Rutul', NULL, NULL, NULL, NULL, '', NULL),
+(12, 'Tabasaran', NULL, NULL, NULL, NULL, '', NULL),
+(13, 'Tchétchène', NULL, NULL, NULL, NULL, '', NULL),
+(14, 'Tindi', NULL, NULL, NULL, NULL, '', NULL),
+(15, 'Tsakhur', NULL, NULL, NULL, NULL, '', NULL),
+(16, 'Tsez', NULL, NULL, NULL, NULL, '', NULL),
+(17, 'Udi', NULL, NULL, NULL, NULL, '', NULL),
+(18, 'Gbaya', NULL, NULL, NULL, NULL, 'Ressources :\r\n\r\n * Virelangues (conscience phonologique à partir des jeux de mots)\r\n * Vidéos: les paroles du soufflet de forge (comptes)\r\n * Canal U\r\n * Livre didactique pour enfants: le sillabaire', NULL),
+(19, 'Bambara', NULL, NULL, NULL, NULL, 'Ressources :\r\n\r\n * Dictionnaire en ligne\r\n * Corpus éléctronique de textes (presse, littérature orale, légale)\r\n * Google corpus bambara reference\r\n * Griots, bardes, tradition orale, épique\r\n * Photos et vidéos de la fête de publication du dictionnaire\r\n * Concordancier, dictionnaire', NULL),
+(20, 'Malinke', NULL, NULL, NULL, NULL, '', NULL),
+(21, 'Dan', NULL, NULL, NULL, NULL, '* Vidéos sur les tons (langue championne du monde en tons) ', NULL),
+(22, 'Goo', NULL, NULL, NULL, NULL, 'Nouvelle langue: on vient de la découvrir, compréhensible avec les langues voisines, mais système phonologique pas de tout semblable aux voisins, culture propre, ses locuteurs la considère comme une lange différente, Côte d''Ivoire, Guinée\r\n', NULL),
+(23, 'NKO', NULL, NULL, NULL, NULL, '* Livres pour enfants', NULL),
+(24, 'Arabe yemenite', NULL, NULL, NULL, NULL, '* étude sur la maison yemenite (préposition spatiales) ', NULL),
+(25, 'Maya préhispanique', NULL, NULL, NULL, NULL, '* images de gliphes maya avec commentaires ', NULL),
+(26, 'Hausa', NULL, NULL, NULL, NULL, '', NULL),
+(27, 'Zaa', NULL, NULL, NULL, NULL, '', NULL),
+(28, 'Pidgin naja', NULL, NULL, NULL, NULL, '', NULL),
+(29, 'Catalan', NULL, NULL, NULL, NULL, 'Analyse des structures syntaxiques dans les trois langues à partir des descriptions orales alignées des locuteurs qui décrivent la même histoire d''une grenouille\r\n', NULL),
+(30, 'Espagnol', NULL, NULL, NULL, NULL, 'Analyse des structures syntaxiques dans les trois langues à partir des descriptions orales alignées des locuteurs qui décrivent la même histoire d''une grenouille', NULL),
+(31, 'Italien', NULL, NULL, NULL, NULL, 'Analyse des structures syntaxiques dans les trois langues à partir des descriptions orales alignées des locuteurs qui décrivent la même histoire d''une grenouille', NULL),
+(32, 'Koalib', NULL, NULL, NULL, NULL, '', NULL),
+(33, 'Casamançais', NULL, NULL, NULL, NULL, '', NULL),
+(34, 'Capverdien', NULL, NULL, NULL, NULL, '', NULL),
+(35, 'Occitan', NULL, NULL, NULL, NULL, '', NULL),
+(36, 'Arménien', NULL, NULL, NULL, NULL, '', NULL),
+(37, 'Iwaidja', NULL, NULL, 'Australie', NULL, '', NULL),
+(38, 'Mawng', NULL, NULL, 'Australie', NULL, '', NULL),
+(39, 'Gunwinggu', NULL, NULL, 'Australie', NULL, '', NULL),
+(40, 'Naxi', 'Naxi', NULL, NULL, '27.46, 100.18', '', 'naxi.mp3');
 
 -- --------------------------------------------------------
 
@@ -209,7 +210,7 @@ ALTER TABLE `author`
 -- AUTO_INCREMENT pour la table `language`
 --
 ALTER TABLE `language`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=40;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=41;
 --
 -- Contraintes pour les tables exportées
 --
@@ -220,7 +221,6 @@ ALTER TABLE `language`
 ALTER TABLE `language_author`
   ADD CONSTRAINT `fk_author_id` FOREIGN KEY (`author_id`) REFERENCES `author` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `fk_language_id` FOREIGN KEY (`language_id`) REFERENCES `language` (`id`) ON DELETE CASCADE;
-SET FOREIGN_KEY_CHECKS=1;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
