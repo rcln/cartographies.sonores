@@ -97,8 +97,8 @@ var LanguageList = (function (Stores, Actions, Dispatcher) {
                     <Table
                         data={this.state.data}
                         callback={callback}
-                        columns={Immutable.List(['name', 'glottonym', 'country', 'family', 'author'])}
-                        column_names={Immutable.List(['Langue', 'Glottonyme', 'Pays', 'Famille', 'Auteur(s)'])}
+                        columns={Immutable.List(['name', 'glottonym', 'country', 'family'])}
+                        column_names={Immutable.List(['Langue', 'Glottonyme', 'Pays', 'Famille'])}
                     />
                    );
         }

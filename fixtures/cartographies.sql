@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.4.13.1
+-- version 4.4.14
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Jeu 03 Septembre 2015 à 10:02
+-- Généré le :  Mer 09 Septembre 2015 à 11:46
 -- Version du serveur :  10.0.21-MariaDB-log
--- Version de PHP :  5.6.12
+-- Version de PHP :  5.6.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -15,7 +15,6 @@ DROP TABLE IF EXISTS `author`;
 DROP TABLE IF EXISTS `language`;
 DROP TABLE IF EXISTS `language_author`;
 SET FOREIGN_KEY_CHECKS=1; 
-
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -73,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `language` (
   `position` varchar(255) COLLATE utf8_bin DEFAULT NULL,
   `content` text COLLATE utf8_bin NOT NULL,
   `audio` varchar(255) COLLATE utf8_bin DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Contenu de la table `language`
@@ -119,7 +118,8 @@ INSERT INTO `language` (`id`, `name`, `glottonym`, `family`, `country`, `positio
 (37, 'Iwaidja', NULL, NULL, 'Australie', NULL, '', NULL),
 (38, 'Mawng', NULL, NULL, 'Australie', NULL, '', NULL),
 (39, 'Gunwinggu', NULL, NULL, 'Australie', NULL, '', NULL),
-(40, 'Naxi', 'Naxi', NULL, NULL, '27.46, 100.18', '', 'naxi.mp3');
+(40, 'Naxi', 'Naxi', NULL, NULL, '[[27.46, 100.18]]', '', 'naxi.mp3'),
+(41, 'Maya du Yucatán', 'Maaya t''àan', 'Langues Mayanes', NULL, '[[23.6345010, -102.5527840], [15.7834710, -90.2307590], [17.1898770,	-88.4976500]]', 'Nombre de locuteurs : entre 500.000 et 1.000.000\r\n\r\n![Codex de Paris](images/langues/CodexPeresianus_16.jpg)\r\n\r\n![Stèle 21 d''Edzná](images/langues/Edzna_Stele21.jpg)\r\n\r\n![Rituel des Bacab](images/langues/RitualDeLosBacabes_124.jpg)', NULL);
 
 -- --------------------------------------------------------
 
@@ -162,6 +162,7 @@ INSERT INTO `language_author` (`author_id`, `language_id`) VALUES
 (4, 23),
 (5, 24),
 (6, 25),
+(6, 41),
 (9, 26),
 (9, 27),
 (9, 28),
@@ -213,7 +214,7 @@ ALTER TABLE `author`
 -- AUTO_INCREMENT pour la table `language`
 --
 ALTER TABLE `language`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=41;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=42;
 --
 -- Contraintes pour les tables exportées
 --
@@ -228,4 +229,3 @@ ALTER TABLE `language_author`
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-

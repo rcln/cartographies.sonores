@@ -15,6 +15,7 @@ app.use("/rcln/labex-efl/cartographies/css", express.static(__dirname + '/public
 app.use("/rcln/labex-efl/cartographies/dashgum", express.static(__dirname + '/public/dashgum'));
 app.use("/rcln/labex-efl/cartographies/js", express.static(__dirname + '/public/js'));
 app.use("/rcln/labex-efl/cartographies/audio", express.static(__dirname + '/public/audio'));
+app.use("/rcln/labex-efl/cartographies/images", express.static(__dirname + '/public/images'));
 
 /*
 app.use(function(req, res, next) {
@@ -51,7 +52,14 @@ app.get('/rcln/labex-efl/cartographies/data/:id', function(req, res) {
                 });
             }
 
-            ret.authors = authors
+            ret.authors = authors;
+
+            if (ret.position != null && ret.position.trim().length > 0) {
+                ret.positions = JSON.parse(ret.position);
+            } else {
+                ret.positions = null;
+            }
+            delete ret.position;
 
             res.send(ret);
         });
@@ -60,51 +68,32 @@ app.get('/rcln/labex-efl/cartographies/data/:id', function(req, res) {
 
 app.get('/rcln/labex-efl/cartographies/data', function(req, res) {
     res.contentType('json');
-    db.query('SELECT language_author.author_id, language_author.language_id, author.name FROM language_author INNER JOIN author ON language_author.author_id=author.id;', function(err, rows) {
-        if (err) throw err;
-
-        authors = Object();
-        for (var i = 0; i < rows.length ; i++)
-        {
-            lid = rows[i].language_id;
-            name = rows[i].name
-            if (lid in authors)
-                authors[lid] += ", " + name;
-            else
-                authors[lid] = name;
-        }
     
-        db.query('SELECT * FROM language', function(err, rows) {
-            languages = [];
+    db.query('SELECT * FROM language', function(err, rows) {
+        languages = [];
 
-            for (var i = 0 ; i < rows.length ; i ++) {
-                row = rows[i];
+        for (var i = 0 ; i < rows.length ; i ++) {
+            row = rows[i];
 
-                if (row.position != null && row.position.trim().length > 0) {
-                    l = row.position.split(",");
-                    lat = parseFloat(l[0]);
-                    lon = parseFloat(l[1]);
-                } else {
-                    lon = null;
-                    lat = null;
-                }
-
-                languages.push({
-                    id: row.id,
-                    name: row.name,
-                    glottonym: (row.glottonym == null ? "-" : row.glottonym),
-                    family: (row.family == null ? "-" : row.family),
-                    country: (row.country == null ? "-" : row.country),
-                    lon: lon,
-                    lat: lat,
-                    author: authors[row.id],
-                    audio: row.audio
-                });
+            if (row.position != null && row.position.trim().length > 0) {
+                positions = JSON.parse(row.position)
+            } else {
+                positions = null;
             }
 
-            res.send(languages);
+            languages.push({
+                id: row.id,
+                name: row.name,
+                glottonym: (row.glottonym == null ? "-" : row.glottonym),
+                family: (row.family == null ? "-" : row.family),
+                country: (row.country == null ? "-" : row.country),
+                positions: positions,
+                audio: row.audio
+            });
+        }
 
-        });
+        res.send(languages);
+
     });
 });
 

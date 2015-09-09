@@ -1,21 +1,29 @@
-/*
-body {
-  padding-top: 50px;
-}
-*/
-/*
-.content-map {
-  margin-top: 40px;
-}
-*/
 .leaflet-map {
   height: 400px;
 }
 
+.leaflet-map-detail {
+  height: 200px;
+}
+
 #main-content {
     margin-left: 0px;
-/*
-.content-list {
-  padding: 40px 15px;
 }
-*/
+
+#header-logo img {
+    height: 50px;
+}
+
+#header-logo {
+    float: right;
+    background-color: white;
+    margin-top: 4px;
+}
+
+.div_link {
+    cursor: pointer;
+}
+
+.tiny_image img {
+    height: 200px;
+}
