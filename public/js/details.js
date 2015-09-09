@@ -51,29 +51,51 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
 
     MapViewLeaflet = React.createClass({
         componentDidMount: function () {
-            var map = L.map(this.getDOMNode()).setView([51.505, -0.09], 2);
+            this._map = L.map(this.getDOMNode()).setView([51.505, -0.09], 2);
 
             L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                     {
                         minZoom: 2, 
                         maxZoom: 8, 
                         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
-                    }).addTo(map);
+                    }).addTo(this._map);
 
-            var markers = this.props.positions.map(function (position) {
+            this._markers = this.props.positions.map(function (position) {
                 lat = position.get(0);
                 lon = position.get(1);
 
-                return L.marker([lat, lon]).addTo(map);
-            });
+                return L.marker([lat, lon]).addTo(this._map);
+            }.bind(this));
 
-            var group = new L.featureGroup(markers.toArray());
-            map.fitBounds(group.getBounds(), {padding: [50, 50]});
+            var group = new L.featureGroup(this._markers.toArray());
+            this._map.fitBounds(group.getBounds(), {padding: [50, 50]});
+
+            this._createMarkers();
         },
 
         render: function () {
             return <div className="leaflet-map-detail" />
         },
+
+        componentDidUpdate: function () {
+            this._markers.forEach(function (marker) {
+                this._map.removeLayer(marker);
+            }.bind(this));
+
+            this._createMarkers();
+        },
+
+        _createMarkers: function () {
+            this._markers = this.props.positions.map(function (position) {
+                lat = position.get(0);
+                lon = position.get(1);
+
+                return L.marker([lat, lon]).addTo(this._map);
+            }.bind(this));
+
+            var group = new L.featureGroup(this._markers.toArray());
+            this._map.fitBounds(group.getBounds(), {padding: [50, 50]});
+        }
     });
 
     MapView = React.createClass({
