@@ -9,7 +9,7 @@ var param = {
 };
 
 if (config.db.socketPath != undefined)
-  param.socketPath: config.db.socketPath;
+  param.socketPath = config.db.socketPath;
 
 var connection = mysql.createConnection(param);
  
