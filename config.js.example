@@ -1,0 +1,14 @@
+var config = {};
+
+config.db = {}
+config.db.host = 'localhost';
+config.db.user = 'root';
+config.db.password = 'root';
+config.db.database = 'cartographies';
+
+config.server = {}
+config.server.port = 8080;
+config.server.path = "/rcln/labex-efl/cartographies/"
+
+
+module.exports = config;

@@ -2,6 +2,7 @@ var express = require('express');
 var swig = require('swig');
 
 var db = require('./db');
+var config = require('./config')
 
 var app = express();
 
@@ -11,11 +12,11 @@ app.set('views', __dirname + '/views');
 app.set('view cache', true);
 swig.setDefaults({ cache: false });
 
-app.use("/rcln/labex-efl/cartographies/css", express.static(__dirname + '/public/css'));
-app.use("/rcln/labex-efl/cartographies/dashgum", express.static(__dirname + '/public/dashgum'));
-app.use("/rcln/labex-efl/cartographies/js", express.static(__dirname + '/public/js'));
-app.use("/rcln/labex-efl/cartographies/audio", express.static(__dirname + '/public/audio'));
-app.use("/rcln/labex-efl/cartographies/images", express.static(__dirname + '/public/images'));
+app.use(config.server.path + "css", express.static(__dirname + '/public/css'));
+app.use(config.server.path + "dashgum", express.static(__dirname + '/public/dashgum'));
+app.use(config.server.path + "js", express.static(__dirname + '/public/js'));
+app.use(config.server.path + "audio", express.static(__dirname + '/public/audio'));
+app.use(config.server.path + "images", express.static(__dirname + '/public/images'));
 
 /*
 app.use(function(req, res, next) {
@@ -23,11 +24,15 @@ app.use(function(req, res, next) {
 	res.redirect(301, '/rcln/labex-efl/cartographies/')
 });
 */
-app.get('/rcln/labex-efl/cartographies/', function(req, res) {
-    res.render('languages', {});
+
+app.get(config.server.path, function(req, res) {
+    if(req.url.substr(-1) != '/')
+        res.redirect(301, config.server.path);
+    else
+        res.render('languages', {});
 });
 
-app.get('/rcln/labex-efl/cartographies/data/:id', function(req, res) {
+app.get(config.server.path + 'data/:id', function(req, res) {
     res.contentType('json');
 
     db.query('SELECT * FROM language WHERE id=' + req.params.id, function(err, rows) {
@@ -66,7 +71,7 @@ app.get('/rcln/labex-efl/cartographies/data/:id', function(req, res) {
     })
 });
 
-app.get('/rcln/labex-efl/cartographies/data', function(req, res) {
+app.get(config.server.path + 'data', function(req, res) {
     res.contentType('json');
     
     db.query('SELECT * FROM language', function(err, rows) {
@@ -88,7 +93,8 @@ app.get('/rcln/labex-efl/cartographies/data', function(req, res) {
                 family: (row.family == null ? "-" : row.family),
                 country: (row.country == null ? "-" : row.country),
                 positions: positions,
-                audio: row.audio
+                audio: row.audio,
+                speakers: (row.speakers == null ? "-" : row.speakers)
             });
         }
 
@@ -97,4 +103,4 @@ app.get('/rcln/labex-efl/cartographies/data', function(req, res) {
     });
 });
 
-app.listen(8080);
+app.listen(config.server.port);

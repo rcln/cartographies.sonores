@@ -1,0 +1,69 @@
+languages:
+    maya:
+        authors: [hoppan]
+        name: "Maya du Yucatán"
+        glottonym: "Maaya t'àan"
+        family: "Langue Mayane"
+        position: "[[20.70988, -89.09434]]"
+        speakers: "7.500.000"
+        content: | 
+            Nombre de locuteurs : entre 500.000 et 1.000.000
+            ![Codex de Paris](images/langues/CodexPeresianus_16.jpg)
+            ![Stèle 21 d'Edzná](images/langues/Edzna_Stele21.jpg)
+            ![Rituel des Bacab](images/langues/RitualDeLosBacabes_124.jpg)
+
+    langui:
+        authors: [dunham]
+        name: "Langui"
+        country: "Tanzanie"
+        family: "Langue Bantu"
+        position: "[[-4.90684, 35.78981]]"
+        speakers: "200.000"
+        audio: "langui.mp3"
+        content: |
+            Le langi est une langue bantu (F33 dans la classification de Guthrie) parlée dans la région de Kondoa au centre de la Tanzanie par environ 200 000 personnes.
+
+    bahing:
+        authors: [mazaudon, michailovsky]
+        name: "Bahing"
+        audio: "bahing.mp3"
+        country: "Népal"
+        speakers: "11.700"
+        position: "[[ 27.36775,86.45686]]"
+        content: |
+            Plus d'information:
+
+            * [LACITO](http://lacito.vjf.cnrs.fr/archivage/tools/show_metadatas.php?id=crdo-BHJ_KOKTISALA_SOUND)
+            * [ethnologue.com](http://www.ethnologue.com/language/bhj)
+
+    ngazidja:
+        name: "Ngazidja"
+        country: "Comores"
+        position: "[[-11.698299, 43.255577]]"
+        authors: [rombi]
+        audio: "ngazidja.mp3"
+        content: |
+            Plus d'information:
+
+            * [LACITO](http://lacito.vjf.cnrs.fr/ALC/Languages/Ngazidja_popup.htm)
+            * [Ressources](http://lacito.vjf.cnrs.fr/archivage/tools/show_text.php?id=crdo-ZDJ_DOG_SOUND&idref=crdo-ZDJ_DOG)
+
+    koyirai:
+        name: "Koyi Rai"
+        country: "Népal"
+        speakers: "2.000"
+        audio: "koyirai.mp3"
+        authors: [lahaussois]
+        position: "[[27.39746, 86.88224]]"
+        content: |
+            Plus d'information:
+
+            * [LACITO](http://lacito.vjf.cnrs.fr/ALC/Languages/Koyi_Rai_popup.htm)
+            * [Ressources](http://lacito.vjf.cnrs.fr/pangloss/tools/show_text.php?id=crdo-KKT_RECIPE_SOUND&idref=crdo-KKT_RECIPE)
+
+    capverdien:
+        name: "Capverdien"
+        speakers: "1.000.000"
+        country: "Cap-Vert"
+        position: "[[14.917, -23.517]]"
+        content: ""

@@ -1,0 +1,55 @@
+authors:
+    fangel-gustavson:
+        name: "Noora Fangel-Gustavson"
+        about: "[Laboratoire de Phonétique et Phonologie](http://lpp.in2p3.fr/?lang=fr)"
+    authier:
+        name: "Gilles Authier"
+        about: "INALCO"
+    roulon-doko:
+        name: "Paulette Roulon-Doko"
+        about: "LLACAN"
+    vydrin:
+        name: "Valentin Vydrin"
+        about: "LLACAN"
+    naim:
+        name: "Samia Naim"
+        about: "LACITO"
+    hoppan:
+        name: "Jean-Michel Hoppan"
+        about: "SeDyL, CELIA"
+    guillaume:
+        name: "Sevrine Guillaume"
+        email: "guillaume@vjf.cnrs.fr"
+    segerere:
+        name: "Guillaume Segerere"
+        about: "LLACAN"
+    caron:
+        name: "Bernard Caron"
+        about: "LLACAN"
+    brunetti:
+        name: "Lisa Brunetti"
+        about: "Université de Lyon"
+    qint:
+        name: "Nicolas Qint"
+        about: "LLACAN"
+    donabedian:
+        name: "Anaïd Donabedian"
+        about: "INALCO"
+    caudal:
+        name: "Patrick Caudal"
+        about: "LLF, Université Paris 7"
+    dunham:
+        name: "Margaret Dunham"
+        about: "INALCO"
+    mazaudon:
+        name: "Martine Mazaudon"
+        about: "LACITO"
+    michailovsky:
+        name: "Boyd Michailovsky"
+        about: ""
+    rombi:
+        name: "Marie-Françoise Rombi"
+        about: "LACITO"
+    lahaussois:
+        name: "Aimée Lahaussois"
+        about: "LACITO"
