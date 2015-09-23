@@ -17,6 +17,7 @@ app.use(config.server.path + "dashgum", express.static(__dirname + '/public/dash
 app.use(config.server.path + "js", express.static(__dirname + '/public/js'));
 app.use(config.server.path + "audio", express.static(__dirname + '/public/audio'));
 app.use(config.server.path + "images", express.static(__dirname + '/public/images'));
+app.use(config.server.path + "thumbnails", express.static(__dirname + '/public/thumbnails'));
 
 /*
 app.use(function(req, res, next) {
@@ -65,6 +66,12 @@ app.get(config.server.path + 'data/:id', function(req, res) {
                 ret.positions = null;
             }
             delete ret.position;
+
+            if (ret.images != null && ret.images.trim().length > 0) {
+                ret.images = JSON.parse(ret.images);
+            } else {
+                ret.images = null;
+            }
 
             res.send(ret);
         });

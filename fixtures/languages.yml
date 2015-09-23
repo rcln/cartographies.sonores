@@ -8,9 +8,11 @@ languages:
         speakers: "7.500.000"
         content: | 
             Nombre de locuteurs : entre 500.000 et 1.000.000
-            ![Codex de Paris](images/langues/CodexPeresianus_16.jpg)
-            ![Stèle 21 d'Edzná](images/langues/Edzna_Stele21.jpg)
-            ![Rituel des Bacab](images/langues/RitualDeLosBacabes_124.jpg)
+
+        images:
+            "images/langues/CodexPeresianus_16.jpg": "Codex de Paris"
+            "images/langues/Edzna_Stele21.jpg": "Stèle 21 d'Edzná"
+            "images/langues/RitualDeLosBacabes_124.jpg": "Rituel des Bacab"
 
     langui:
         authors: [dunham]

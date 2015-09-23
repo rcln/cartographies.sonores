@@ -48,6 +48,6 @@ $(function () {
         React.render(<App />, document.getElementById('data-content'));
 
         // remove this
-        // Actions.app.showDetails('40');
+        // Actions.app.showDetails('3');
     });
 });

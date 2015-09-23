@@ -1,7 +1,35 @@
 #!/bin/python
 
-import yaml
+import yaml, json
+import os, shutil
 import mysql.connector
+
+import PIL.Image as Image
+import PIL.ImageOps
+
+def get_public_folder():
+    d = os.path.dirname(os.path.realpath(__file__))
+    d = os.path.join(d, "../public/")
+    return d
+
+def get_thumb_folder():
+    return os.path.join(get_public_folder(), "thumbnails/")
+
+def remove_content(folder):
+    for the_file in os.listdir(folder):
+        file_path = os.path.join(folder, the_file)
+        if os.path.isfile(file_path):
+            os.unlink(file_path)
+        elif os.path.isdir(file_path):
+            shutil.rmtree(file_path)
+
+def resize_and_crop(img_path, modified_path, size):
+    img = Image.open(img_path)
+    img2 = PIL.ImageOps.fit(img, size)
+    directory = os.path.dirname(modified_path)
+    if not os.path.exists(directory):
+            os.makedirs(directory)
+    img2.save(modified_path)
 
 def load_authors(cursor):
     author_ids = {}
@@ -20,6 +48,9 @@ def load_authors(cursor):
     return author_ids
 
 def load_languages(cursor, author_ids):
+    thumb_folder = get_thumb_folder()
+    remove_content(thumb_folder)
+
     with open("./languages.yml") as handler:
         data = yaml.load(handler)
         for k, v in data['languages'].items():
@@ -30,11 +61,24 @@ def load_languages(cursor, author_ids):
             content = v.get('content', None)
             speakers = v.get('speakers', None)
             audio = v.get('audio', None)
+            images = v.get('images', None)
+
+            if images is not None and len(images) == 0:
+                images = None
+
+            if images is not None:
+                for img_path in images:
+                    path = os.path.join(get_public_folder(), img_path)
+                    thumbnail = os.path.join(get_thumb_folder(), img_path)
+                    resize_and_crop(path, thumbnail, (200,200))
+
+                images = json.dumps(images, ensure_ascii=False)
+                 
             
             cursor.execute("""
-                INSERT INTO `language` (`name`, `glottonym`, `family`, `position`, `content`, `speakers`, `audio`) VALUES
-                (%s,%s,%s,%s,%s, %s, %s);
-            """, (name, glottonym, family, position, content, speakers, audio))
+                INSERT INTO `language` (`name`, `glottonym`, `family`, `position`, `content`, `speakers`, `audio`, `images`) VALUES
+                (%s,%s,%s,%s,%s, %s, %s, %s);
+            """, (name, glottonym, family, position, content, speakers, audio, images))
             language_id = cursor.lastrowid
             
             for author in v.get("authors", ()):
@@ -76,6 +120,7 @@ try:
           `position` varchar(255) COLLATE utf8_bin DEFAULT NULL,
           `speakers` varchar(255) COLLATE utf8_bin DEFAULT NULL,
           `content` text COLLATE utf8_bin NOT NULL,
+          `images` text COLLATE utf8_bin DEFAULT NULL,
           `audio` varchar(255) COLLATE utf8_bin DEFAULT NULL
         ) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
     """)

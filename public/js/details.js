@@ -12,7 +12,7 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
                     return (
                         <div>
                             <p>{ name }</p>
-                            <div dangerouslySetInnerHTML={{__html: markdown.toHTML(author.get('about')) }} />
+                            <div dangerouslySetInnerHTML={{__html: marked(author.get('about')) }} />
                         </div>
                     );
                 }
@@ -26,6 +26,42 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
                     { array }
                 </div>
             )
+        }
+    });
+
+    GalleryView = React.createClass({
+        _load_colorbox: function () {
+            $(".group1").colorbox({rel:'group1', height:'80%', scale: true});
+        }, 
+
+        componentDidMount: function () {
+            this._load_colorbox();
+        },
+
+        componentDidUpdate: function () {
+            this._load_colorbox();
+        },
+
+        render: function () {
+            if (this.props.images == null)
+                return <div></div>
+
+            images = this.props.images.map(function(title, path) {
+                console.log(path, title);
+                return (
+                        <div className="col-xs-4">
+                            <a href={path} title={title} className="group1"><img src={"thumbnails/" + path} width="100%" /></a>
+                        </div>
+                       );
+            }).toArray();
+            return (
+                    <div className="showback">
+                        <h4>Gallerie</h4>
+                        <div className="row">
+                            { images }
+                        </div>
+                    </div>
+                   );
         }
     });
 
@@ -140,13 +176,14 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
                                         </p>
                                         <h3>{ this.state.name }</h3>
 
-                                        <div className="tiny_image" dangerouslySetInnerHTML={{__html: markdown.toHTML(this.state.content) }} />
+                                        <div className="tiny_image" dangerouslySetInnerHTML={{__html: marked(this.state.content) }} />
 
                                     </div>
                                     <div className="col-lg-3">
-                                        <DetailView data={ this.state.data } />
-                                        <AuthorView authors={ this.state.authors } />
                                         <MapView positions={ this.state.positions } />
+                                        <DetailView data={ this.state.data } />
+                                        <GalleryView images={ this.state.images } />
+                                        <AuthorView authors={ this.state.authors } />
                                     </div>
                                 </div>
                             </div>
@@ -170,7 +207,8 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
                     content: Stores.details.data.get('content'),
                     name: Stores.details.data.get('name'),
                     authors: Stores.details.data.get('authors'),
-                    positions: Stores.details.data.get('positions')
+                    positions: Stores.details.data.get('positions'),
+                    images: Stores.details.data.get('images')
                 };
             }
         }
