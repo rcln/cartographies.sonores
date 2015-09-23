@@ -29,7 +29,7 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
         }
     });
 
-    GalleryView = React.createClass({
+    GaleryView = React.createClass({
         _load_colorbox: function () {
             $(".group1").colorbox({rel:'group1', height:'80%', scale: true});
         }, 
@@ -56,7 +56,7 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
             }).toArray();
             return (
                     <div className="showback">
-                        <h4>Gallerie</h4>
+                        <h4>Galerie</h4>
                         <div className="row">
                             { images }
                         </div>
@@ -182,7 +182,7 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
                                     <div className="col-lg-3">
                                         <MapView positions={ this.state.positions } />
                                         <DetailView data={ this.state.data } />
-                                        <GalleryView images={ this.state.images } />
+                                        <GaleryView images={ this.state.images } />
                                         <AuthorView authors={ this.state.authors } />
                                     </div>
                                 </div>

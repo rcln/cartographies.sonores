@@ -63,9 +63,26 @@ languages:
             * [LACITO](http://lacito.vjf.cnrs.fr/ALC/Languages/Koyi_Rai_popup.htm)
             * [Ressources](http://lacito.vjf.cnrs.fr/pangloss/tools/show_text.php?id=crdo-KKT_RECIPE_SOUND&idref=crdo-KKT_RECIPE)
 
-    capverdien:
-        name: "Capverdien"
-        speakers: "1.000.000"
-        country: "Cap-Vert"
-        position: "[[14.917, -23.517]]"
-        content: ""
+    hausa:
+        name: "Hausa"
+        authors: [caron]
+        audio: "hausa.mp3"
+        glottonym: "Haoussa"
+        country: Sud-Niger, Nord-Nigéria
+        family: tchadique
+        speakers: "45.000.000"
+        position: "[[12.0021794,  8.5919561]]"
+        content: |
+            ### Transcription de l'audio par Bernard Caron
+            C’est l’histoire de Gizo, l’araignée, et de sa femme Koki, la mante religieuse. Ils étaient tous les deux ensemble quand il dit à Koki, je veux manger de la sauce au chanvre. Alors il alla... alors elle dit bon, et elle, où va-t-elle trouver ce chanvre? Il fallait qu’elle aille... Ne fallait-il pas qu’elle aille à la ville? Il fallait qu’elle aille... il fallait qu’elle à la maison, à la ville où elle était née.
+
+            Quand elle arriva à sa ville, elle trouva... alors elle dit qu’elle était venue chercher du chanvre. Alors, ils lui en donnèrent. Quand ils lui eurent donné de ce chanvre, elle revint chez elle et elle le fit cuire. Quand il fut prêt, elle dit bon, Gizo, voilà ce que tu as demandé. Voilà, tu as ce que tu voulais. Alors il demanda, c'est bien ce que je voulais? Koki dit oui. Tu en as trouvé? Oui, Gizo, j'en ai trouvé. Alors il dit, eh bien, je te remercie.... mmm... Et voilà... Ils vont se régaler. Alors il lui dit : il faut trouver le plat pour l'accompagner. Alors elle dit, bon, donne-moi ce qu'il faut pour que j'aille en chercher. Alors il alla chercher de l'argent et le lui donna. Puis, elle partir acheter de quoi accompagner... de quoi manger avec ce chanvre.
+
+            Alors elle pila le mil. Quand elle l'eut pilé, elle... elle... elle... elle le mélangea pour lui. Elle l'ajouta au plat pour lui. Elle en remplit un plat pour lui. Il mangea, et mangea... Il mangea jusqu'à ce qu'il fut rassasié. Ensuite, il demanda, où sont les enfants? (Il va empêcher sa femme de manger!). Qu'on appelle les enfants! Qu'on leur donne à manger! (Eh bien!) Qu'ils mangent, eux aussi! Ils appelèrent leurs enfants. Ils ont cinq enfants. Tous reçurent leur part, absolument tous. On dit à chacun de manger. Chacun mangea jusqu'à ce qu'il fut rassasié... Elle, il ne la laissa pas manger. Il lui dit qu'elle ne devait pas manger. Si jamais elle mangeait, (il est vraiment mesquin!) ça allait chauffer pour elle.
+
+            De fait, elle ne devait même pas songer à y toucher ou à en manger. Sinon, si ils voulaient vivre en paix ensemble, eh bien, elle ne devait pas toucher à ce chanvre. (Si elle y touche, elle va le regretter.) Elle se dit, comment vais-je faire? Si elle y touche, elle va avoir des problèmes. Comment va-t-elle... Elle dit, comment est-ce possible, alors que je suis allée chercher quelque chose de mes propres mains, maintenant tu me dis que je n'ai pas le droit d'y toucher ou de le manger? Il lui dit, tu ne vas rien manger. Et si tu en manges, tu le regretteras. (Il en est tout à fait capable.) Alors, elle dit, c0est bon! (Elle lui abandonna la nourriture.) Je dois lui laisser la nourr... Alors, elle lui abandonna la nourriture.
+
+            Quant à lui, il continua à manger à en être malade. Son ventre se mit à enfler. Après que son ventre eut enflé, la diarrhée s'empara de lui. (Pas possible!) C'est alors qu'il dit, Koki, je me suis mal comporté envers toi. En m’empêchant de manger... en t'empêchant de manger, eh bien, je me suis mal comporté envers toi. Ensuite, elle dit, bon, c'est toi, j'ai dit que je voulais manger, je voulais manger et tu as refusé. C'est moi qui suis allée chercher le truc. Tu m'as obligé à aller le chercher, j'en ai trouvé et je te l'ai donnée. Et ensuite tu m'as interdit d'en manger. Eh bien, tu as été puni.
+
+            Ensuite, il se coucha et il mourut. (Mon Dieu! Il ne peut s'en prendre qu'à lui-même.) 
+
