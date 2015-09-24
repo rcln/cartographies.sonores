@@ -59,6 +59,7 @@ def load_languages(cursor, author_ids):
             family = v.get('family', None)
             position = v.get('position', None)
             content = v.get('content', None)
+            country = v.get('country', None)
             speakers = v.get('speakers', None)
             audio = v.get('audio', None)
             images = v.get('images', None)
@@ -76,9 +77,9 @@ def load_languages(cursor, author_ids):
                  
             
             cursor.execute("""
-                INSERT INTO `language` (`name`, `glottonym`, `family`, `position`, `content`, `speakers`, `audio`, `images`) VALUES
-                (%s,%s,%s,%s,%s, %s, %s, %s);
-            """, (name, glottonym, family, position, content, speakers, audio, images))
+                INSERT INTO `language` (`name`, `glottonym`, `family`, `position`, `content`, `speakers`, `audio`, `images`, `country`) VALUES
+                (%s,%s,%s,%s,%s, %s, %s, %s, %s);
+            """, (name, glottonym, family, position, content, speakers, audio, images, country))
             language_id = cursor.lastrowid
             
             for author in v.get("authors", ()):
