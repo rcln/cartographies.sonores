@@ -37,7 +37,10 @@ app.get(config.server.path + 'data/:id', function(req, res) {
     res.contentType('json');
 
     db.query('SELECT * FROM language WHERE id=' + req.params.id, function(err, rows) {
-        if (err) throw err;
+        if (err || rows.length == 0) {
+            res.status(404).end();
+            return;
+        };
 
         ret = rows[0]
         db.query( 
@@ -46,7 +49,10 @@ app.get(config.server.path + 'data/:id', function(req, res) {
             'INNER JOIN author ON language_author.author_id=author.id ' +
             'WHERE language_author.language_id=' + req.params.id,
             function(err, rows) {
-            if (err) throw err;
+            if (err) {
+                res.status(404).end();
+                return;
+            };
 
             authors = [];
             for (var i = 0; i < rows.length ; i++)
