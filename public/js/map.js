@@ -3,14 +3,21 @@ var LanguageMap = (function (Stores, Actions, Dispatcher) {
     var module = {};
 
     module.popup_callback = function (id, audio_id) {
+        /*
+         * Pause audio
         if (audio_id != "null") {
             document.getElementById(audio_id).pause();
         }
+        */
 
         Actions.app.showDetails(id);
     };
 
     module.view = React.createClass({
+        contextTypes: {
+            router: React.PropTypes.func
+        },
+
         componentDidMount: function () {
             var map = L.map(this.getDOMNode()).setView([51.505, -0.09], 2);
 
@@ -44,10 +51,10 @@ var LanguageMap = (function (Stores, Actions, Dispatcher) {
 
                     var popup = marker.bindPopup(
                         '<div>' +
-                            '<div class="div_link" onClick="LanguageMap.popup_callback(' + row.get('id') + ', \'' + audio_id + '\');">'+
+                            '<a href=' + this.context.router.makeHref('langue', {langue_id: row.get('id')}) + '>' + 
                             '<b>' + row.get('name') + '</b>' + 
                             ' - Plus d\'information' + 
-                            '</div>' +
+                            '</a>' +
                             audio +
                         '</div>'
                     );

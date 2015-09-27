@@ -1,4 +1,6 @@
 var LanguageDetails = (function (Stores, Actions, Dispatcher) {
+    var Link = ReactRouter.Link;
+
     var module = {};
 
     AuthorView = React.createClass({
@@ -162,32 +164,36 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
             Stores.details.off('update', this._update);
         },
 
+        componentWillReceiveProps: function(nextProps) {
+            this.setState(this.getState(nextProps));
+        },
+
         render: function () {
             if (this.state.loading) {
                 return <div>Loading...</div>;
             } else {
                 return (
-                            <div>
-                                <div className="row mt">
-                                    <div className="col-lg-9">
-                                        <p onClick={ function () { Actions.app.showList() } }>
-                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                            &lt; Retourner à la liste des langues
-                                        </p>
-                                        <h3>{ this.state.name }</h3>
+                        <div>
+                            <div className="row mt">
+                                <div className="col-lg-9">
+                                    <Link to="app">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        &lt; Retourner à la liste des langues
+                                    </Link>
+                                    <h3>{ this.state.name }</h3>
 
-                                        <div className="tiny_image" dangerouslySetInnerHTML={{__html: marked(this.state.content) }} />
+                                    <div className="tiny_image" dangerouslySetInnerHTML={{__html: marked(this.state.content) }} />
 
-                                    </div>
-                                    <div className="col-lg-3">
-                                        <MapView positions={ this.state.positions } />
-                                        <DetailView data={ this.state.data } />
-                                        <GaleryView images={ this.state.images } />
-                                        <AuthorView authors={ this.state.authors } />
-                                    </div>
+                                </div>
+                                <div className="col-lg-3">
+                                    <MapView positions={ this.state.positions } />
+                                    <DetailView data={ this.state.data } />
+                                    <GaleryView images={ this.state.images } />
+                                    <AuthorView authors={ this.state.authors } />
                                 </div>
                             </div>
-                       );
+                        </div>
+                   );
             }
         },
 
@@ -195,20 +201,23 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
             this.setState(this.getState());
         },
         
-        getState: function () {
-            if (Stores.details.data === null)
-                return { language_id: Stores.details.language_id, loading: true };
+        getState: function (props) {
+            props = props ? props : this.props;
+
+            data = Stores.details.get(props.language_id);
+            if (data === null)
+                return { language_id: props.language_id, loading: true };
             else 
             {
                 return {
-                    language_id: Stores.details.language_id, 
+                    language_id: props.language_id, 
                     loading: false, 
-                    data: Stores.details.data,
-                    content: Stores.details.data.get('content'),
-                    name: Stores.details.data.get('name'),
-                    authors: Stores.details.data.get('authors'),
-                    positions: Stores.details.data.get('positions'),
-                    images: Stores.details.data.get('images')
+                    data: data,
+                    content: data.get('content'),
+                    name: data.get('name'),
+                    authors: data.get('authors'),
+                    positions: data.get('positions'),
+                    images: data.get('images')
                 };
             }
         }

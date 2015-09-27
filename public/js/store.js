@@ -67,30 +67,6 @@ var Stores = (function (Dispatcher) {
         return new Store(Dispatcher);
     } ());
 
-    module.app = (function() {
-        var Store = function (dispatcher) {
-            this.details = null;
-            this.token = dispatcher.register(this.handlePayload.bind(this));
-        };
-        Store.prototype = new EventEmitter();
-
-        Store.prototype.handlePayload = function (payload, dispatcher) {
-            switch(payload.action.actionType) {
-                case 'SHOW_DETAILS':
-                    this.details = payload.action.language_id;
-                    this.trigger('update');
-                    break;
-
-                case 'SHOW_LIST':
-                    this.details = null;
-                    this.trigger('update');
-                    break
-            }
-        };
-
-        return new Store(Dispatcher);
-    })();
-
     module.details = (function() {
         var Store = function(dispatcher) {
             this.language_id= null;
@@ -100,26 +76,27 @@ var Stores = (function (Dispatcher) {
         };
         Store.prototype = new EventEmitter();
 
-        Store.prototype.handlePayload = function (payload, dispatcher) {
-            switch(payload.action.actionType) {
-                case 'SHOW_DETAILS':
-                    this.language_id = payload.action.language_id;
+        Store.prototype.get = function (id) {
+            var str_id = String(id);
 
-                    var str_id = String(this.language_id);
-                    if (this.cache.has(str_id)) {
-                        console.log('Retrieving from cache :' + str_id);
-                        this.data = this.cache.get(str_id);
-                    } else {
-                        console.log('Retrieving from server :' + str_id);
-                        this.data = null;
-                        $.get('data/' + str_id, function(data) {
-                            this.cache = this.cache.set(str_id, Immutable.fromJS(data));
-                            Actions.app.showDetails(payload.action.language_id);
-                        }.bind(this));
-                    }
+            if (this.cache.has(str_id))
+            {
+                console.log('Retrieving from cache :' + str_id);
+                return this.cache.get(str_id);
+            } 
+            else
+            {
+                console.log('Retrieving from server :' + str_id);
+                $.get('data/' + str_id, function(data) {
+                    this.cache = this.cache.set(str_id, Immutable.fromJS(data));
                     this.trigger('update');
-                    break;
-            }
+                }.bind(this));
+
+                return null;
+             } 
+        }
+
+        Store.prototype.handlePayload = function (payload, dispatcher) {
         };
 
         return new Store(Dispatcher);

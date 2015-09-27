@@ -1,5 +1,6 @@
 var LanguageList = (function (Stores, Actions, Dispatcher) {
     var module = {}
+    var Link = ReactRouter.Link;
 
     var TableRow = React.createClass({
         getDefaultProps: function () {
@@ -13,7 +14,8 @@ var LanguageList = (function (Stores, Actions, Dispatcher) {
                 if (props.header)
                     return <th>{v}</th>;
                 else
-                    return <td onClick={function () { props.callback(props.item_id) }}>{v}</td>
+                    return <td><Link to="langue" params={{langue_id: props.item_id}}>{v}</Link></td>
+                    //return <td onClick={function () { props.callback(props.item_id) }}>{v}</td>
             }).toArray();
 
             var style = { display: props.display ? 'table-row' : 'none' };
