@@ -18,6 +18,9 @@ app.use(config.server.path + "js", express.static(__dirname + '/public/js'));
 app.use(config.server.path + "audio", express.static(__dirname + '/public/audio'));
 app.use(config.server.path + "images", express.static(__dirname + '/public/images'));
 app.use(config.server.path + "thumbnails", express.static(__dirname + '/public/thumbnails'));
+app.use(config.server.path + "components", express.static(__dirname + '/dist'));
+app.use(config.server.path + "components/leaflet", express.static(__dirname + '/bower_components/leaflet/dist/images'));
+app.use(config.server.path + "components/bootstrap", express.static(__dirname + '/bower_components/bootstrap/dist'));
 
 /*
 app.use(function(req, res, next) {
@@ -26,17 +29,10 @@ app.use(function(req, res, next) {
 });
 */
 
-app.get(config.server.path, function(req, res) {
-    if(req.url.substr(-1) != '/')
-        res.redirect(301, config.server.path);
-    else
-        res.render('languages', {});
-});
-
 app.get(config.server.path + 'data/:id', function(req, res) {
     res.contentType('json');
 
-    db.query('SELECT * FROM language WHERE id=' + req.params.id, function(err, rows) {
+    db.query('SELECT * FROM language WHERE id=\'' + req.params.id + '\'', function(err, rows) {
         if (err || rows.length == 0) {
             res.status(404).end();
             return;
@@ -47,7 +43,7 @@ app.get(config.server.path + 'data/:id', function(req, res) {
             'SELECT language_author.author_id, language_author.language_id, author.name, author.email, author.about ' +
             'FROM language_author ' +
             'INNER JOIN author ON language_author.author_id=author.id ' +
-            'WHERE language_author.language_id=' + req.params.id,
+            'WHERE language_author.language_id=\'' + req.params.id + '\'',
             function(err, rows) {
             if (err) {
                 res.status(404).end();
@@ -114,6 +110,13 @@ app.get(config.server.path + 'data', function(req, res) {
         res.send(languages);
 
     });
+});
+
+app.get(config.server.path, function(req, res) {
+    if(req.url.substr(-1) != '/')
+        res.redirect(301, config.server.path);
+    else
+        res.render('languages', {});
 });
 
 app.listen(config.server.port);

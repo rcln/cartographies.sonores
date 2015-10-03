@@ -1,3 +1,7 @@
+.wrapper {
+    padding: 15px 15px 15px;
+}
+
 .leaflet-map {
   height: 400px;
 }

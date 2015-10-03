@@ -77,16 +77,15 @@ def load_languages(cursor, author_ids):
                  
             
             cursor.execute("""
-                INSERT INTO `language` (`name`, `glottonym`, `family`, `position`, `content`, `speakers`, `audio`, `images`, `country`) VALUES
-                (%s,%s,%s,%s,%s, %s, %s, %s, %s);
-            """, (name, glottonym, family, position, content, speakers, audio, images, country))
-            language_id = cursor.lastrowid
+                INSERT INTO `language` (`id`, `name`, `glottonym`, `family`, `position`, `content`, `speakers`, `audio`, `images`, `country`) VALUES
+                (%s, %s,%s,%s,%s,%s, %s, %s, %s, %s);
+            """, (k, name, glottonym, family, position, content, speakers, audio, images, country))
             
             for author in v.get("authors", ()):
                 cursor.execute("""
                     INSERT INTO `language_author` (`author_id`, `language_id`) VALUES
                     (%s,%s);
-                """, (author_ids[author], language_id))
+                """, (author_ids[author], k))
 
 try:
     con = mysql.connector.connect(host="localhost", user="root", password="root", database="cartographies")
@@ -113,7 +112,7 @@ try:
     
     cur.execute("""
         CREATE TABLE IF NOT EXISTS `language` (
-          `id` int(11) NOT NULL,
+          `id` varchar(100) NOT NULL,
           `name` varchar(255) COLLATE utf8_bin NOT NULL,
           `glottonym` varchar(255) COLLATE utf8_bin DEFAULT NULL,
           `family` varchar(255) COLLATE utf8_bin DEFAULT NULL,
@@ -123,13 +122,13 @@ try:
           `content` text COLLATE utf8_bin NOT NULL,
           `images` text COLLATE utf8_bin DEFAULT NULL,
           `audio` varchar(255) COLLATE utf8_bin DEFAULT NULL
-        ) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
     """)
     
     cur.execute("""
         CREATE TABLE IF NOT EXISTS `language_author` (
           `author_id` int(11) NOT NULL,
-          `language_id` int(11) NOT NULL
+          `language_id` varchar(100) NOT NULL
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
     """)
     
@@ -145,10 +144,6 @@ try:
     """)
 
     cur.execute("""ALTER TABLE `author`
-          MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
-    """)
-
-    cur.execute("""ALTER TABLE `language`
           MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
     """)
 

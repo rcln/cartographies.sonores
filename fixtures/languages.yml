@@ -90,13 +90,15 @@ languages:
         name: "Naija"
         authors: [caron]
         country: "Nigéria"
-        family: "Créole (base anglaise)"
+        family: "Créole à base lexicale anglaise"
         speakers: "75.000.000"
         audio: "naija.mp3"
         glottonym: "Naija (Pidgin du Nigéria)"
         position: "[[9.0819990, 8.6752770]]"
         content: |
             ### Transcription de l'audio : Histoire d'une lionne
+
+            *Transcription par Bernard Caron*
             
             Je veux raconter une histoire. C'est une histoire que j'ai entendue racontée par mon arrière-grand-père. C'est l'histoire d'une méchante femme qu'un homme a épousée. L'home a épousé deux femmes. L'home a épousé deux femmes, cet homme euh... quand la mère, étant enceinte, commença à accoucher, à cette époque, les gens qui habitaient dans le village étaient peu nombreux, le nom du village était Ologba.
             
@@ -105,3 +107,242 @@ languages:
             Tout le monde se mit à chercher, à chercher, à chercher la femme, sans la trouver. Comme elle avait emporté la femme, ils arrivèrent là où était le lionceau, et la femme acoucha. Alors, la lionne, la lionne dit, celle qui a donné naissance à un petit ne peut pas faire de mal au petit d'une autre personne. Si bien qu'elle tua la mère, elle dévora la mère et garda le nouveau-né. C'est à dire que la lionne le garda avec son propre petit, c'est à dire le lionceau, elle les garda ensemble. Ensuite, elle appela le bébé humain Oyebe. Il devint donc Oyebe Omaotiyan. C'est à dire Oyebe, frère ainé de... frère cadet d'Otiyan. C'est ce que ça veut dire dans ma langue.
             
             Le temps passa, ils grandirent, la lionne, la lionne dit qu'il fallait élever le garçon, que quand le garçon serait grand, son propre petit allait le manger comme elle avait mangé la mère. Donc ce qui arriva, le garçon devint de plus en plus grand, ils devinrent très proches, le garçon et le lionceau vivaient dans la forêt comme frère et sœur. En fait, ils étaient plus que frère et soeur, ils sortaient, chassaient et faisaient tout ensemble. Mème quand le lion mourait de faim, il refusait de le toucher et l'appelait, il l'appelait son frère. Même s'il tuait d'autres humains, in le le touchait même pas, car c'était son propre frère. 
+
+    zabid:
+        name: "Dialecte arabe de Zabid"
+        authors: [naim]
+        glottonym: "Zabīd"
+        country: "Yemen"
+        family: "Séitique"
+        speakers: "54.000"
+        audio: "zabid.mp3"
+        position: "[[14.2004314, 43.3222227]]"
+        images:
+            "images/langues/zabid1.jpg": "Ville de Zabid"
+            "images/langues/zabid2.jpg": "Ville de Zabid"
+            "images/langues/zabid3.jpg": "Ville de Zabid"
+        content: |
+            Zabid est une ville côtière située au sud-ouest du Yémen, dans la plaine qui longe la merRouge, la Tihama. Cette région est surtout connue pour ses palmeraies puisqu'elle représente à elle seule 95% de la superficie totale des palmeraies yéménites.
+
+            La ville compte près de 54 000 habitants. Jadis florissante – elle fut la capitale du Yémen du XIIème au XVème siècle – Zabid est aujourd'hui d'un intérêt surtout historique et archéologique, en raison de son architecture domestique et militaire et de son tracé urbain. Les maisons traditionnelles en briques cuites sont construites sur un modèle de base avec une grande pièce donnant sur une cour intérieure à ciel ouvert. Les maisons les plus cossues ont deux ou trois étages et des intérieurs richement décorés avec des murs, des niches et des plafonds sculptés. Depuis le déclin progressif de la ville, une grande partie des habitations traditionnelles est tombée en ruine. Depuis 2000, Zabid est classée au patrimoine mondial en péril, par l'UNESCO.
+
+            Le conte présenté ici a été enregistré en 1993 au domicile de Madame T.H., âgée d'une soixantaine d'années (à l'époque), en présence de ses voisines et de leurs enfants.
+            * Glottonyme : variété dialectale de l'arabe dite zabīdī
+            * Classification par famille : Langues Afro-asiatiques > Langues sémitiques > groupe Péninsule arabique > dialectes yéménites.
+
+
+            ### Transcription de l'audio : Le fils du roi et la fille du ramasseur de bois
+            
+            *Transcription de Samia Naïm*
+
+            Ḥalāle wa lik [formule d'entrée du conte] [Il était une fois] un homme pauvre, un ramasseur de bois, et un roi. Le pauvre avait deux filles. Le roi lui demanda la main de sa fille ; le fils du roi lui demanda la main de sa fille :
+
+            – “Je veux épouser ta fille
+
+            – Non
+
+            – Pourquoi tu refuses?
+
+            – Je suis un homme pauvre, un petit, et toi tu es un grand, tu vas m'humilier
+
+            – Mais non, je ne te ferai rien
+
+            – Non, c'est non. Ma fille je la marierai à un homme pauvre comme moi”
+
+            Très bien, se dit le fils du roi. Il sera puni. Quelques jours plus tard, il le fit venir :
+
+            – Qu'y a-t-il ? Que me veux-tu ?
+
+            – Je vais te donner ce mouton. Tue le, apporte moi sa viande cuite, puis rends moi le mouton vivant (une énigme) sans qu'il y ait la moindre fumée.
+
+            Le pauvre se dit : “comment faire ? Il me donne un mouton, je lui en donne de la viande et je la fais cuire sans fumée ? Avec quoi vais-je la cuire? Avec mes pieds ?
+
+            Il alla raconter l'histoire à sa femme :
+
+            – Le roi m'a dit ça et ça et ça...”
+
+            – Et toi, que lui as-tu dit ?
+
+            – J'ai refusé d'obéir
+
+            – Va lui dire de te donner le mouton
+
+            – Mais tu vas me créer des ennuis ! Il me coupera la tête!
+
+            – Non, sur ma tête qu'il ne te coupera pas la tête.
+
+            Le pauvre homme se rendit chez le fils du roi et lui dit : “donne moi le mouton et 10 000 roupies, et moi je te rendrai le mouton vivant avec de la viande cuite sans fumée. Le fils du roi accepta et lui donna un mouton et 10 000 roupies. La femme du pauvre est une personne très rusée. Elle prit le mouton et lui coupa la queue. Puis elle la remplit de coton et la recousit sur le mouton. Le mouton était toujours vivant. Puis elle prit des bougies, les alluma et fit cuire la viande de la queue sans qu'aucune fumée ne sorte. Une fois cuite, elle dit à son mari : “voici le mouton vivant, et voici la viande cuite. Donne les au fils du roi”. Il se rendit chez le fils du roi et lui dit : “voici le mouton et voici sa viande”. Le mouton était tel qu'il l'avait pris.
+
+            Une semaine plus tard, le fils du roi le soumit à une autre épreuve. Il le fit venir :
+
+            – Qu'y a-t-il ?
+
+            – Je veux que tu déplaces ma maison et que tu la mettes à côté de celle de mon père
+
+            – La maison de ton père est à côté de la mosquée et ta maison est ici ! Comment la transporter ? Peut-on transporter une maison ?
+
+            Mais le fils du roi le menaça de lui couper la tête s'il ne déplaçait pas la maison. Il alla chez sa femme et lui rapporta l'affaire. Sa femme lui dit d'accepter pour 10 000 roupies. Le fils du roi accepta l'échange, à condition que la maison soit déplacée pour le vendredi.
+
+            L'homme pauvre alla acheter 5-6 cordes. Ils les attacha l'une à l'autre puis il entoura la maison avec. A l'heure de la prière du vendredi, il se tint devant la maison et fit passer la corde sur son dos. A la fin de la prière, au moment où les personnes, dont le roi et son fils, commencèrent à sortir de la mosquée, il se mit à les interpeller : “je vous prie au nom de Dieu, approchez-vous !” Les gens se demandaient s'il était fou. Ils s'approchèrent de lui. Le roi lui-même s'approcha aussi :
+
+            – Qu'as-tu mon fils ?
+
+            – Le fils du roi me demande de transporter sa maison jusqu'à celle de son père. Que puis-je faire ? Il faudrait basculer la maison sur mon dos pour que je puisse la transporter
+
+            – Quoi ? Tu veux qu'on renverse toute une maison sur ton dos ?
+
+            – Oui, c'est la volonté du fils du roi, sinon il me coupe la tête.
+
+            Le roi se tourna vers son fils et lui demanda s'il avait donné cet ordre. Le fils lui dit qu'il avait donné cet ordre parce qu'il avait refusé de lui donner sa fille en mariage. Alors le roi se fâcha contre son fils et dit au pauvre homme de s'en aller. Il lui donna 10 000 roupies de plus.
+
+            Une semaine ou deux plus tard, le fils du roi fit à nouveau venir le pauvre. Il lui remit un moulin à grains cassé et lui demanda de le recoudre, sans quoi il lui tranchera la tête.
+
+            – Mais pourquoi me couper la tête ? Le moulin à grains est en pierre et il est impossible de coudre la pierre.
+
+            – Tu le feras, que ça te plaise ou pas ! Il alla trouver à sa femme– Le fils du roi m'a donné une nouvelle épreuve
+
+            – De quoi s'agit-il ?
+
+            – Il a un moulin à grains cassé en deux morceaux. Il veut que je le recouse.
+
+            – Demande 20 000 mille roupies de plus.
+
+            Le fils du roi accepta. L'homme pauvre se rendit alors sur le terrain vague du Wāli al-Haddad et remplit un panier de gravier. Puis il prit le moulin à grains et le déposa devant la porte de la mosquée et posa le panier de graviers sur sa tête. A l'heure de la sortie de la prière, il déposa le gravier aux pieds du roi.
+
+            – Qu'as-tu mon fils ?
+
+            – Au nom de Dieu, aidez moi à filer du gravier
+
+            – Filer du gravier ? Le gravier ça se file ?
+
+            – On ne peut coudre la pierre qu'avec de la pierre. Ton fils veut que je lui couse le moulin à grains. Que puis-je faire ?
+
+            Le roi se retourna vers son fils et lui ordonna de cesser d'embêter le pauvre homme. Il donna au pauvre 20 000 roupies.
+
+            Plusieurs jours après, le fils du roi vint demander la main de la fille du pauvre :
+
+            – Tu vas me donner ta fille en mariage, sinon je te coupe la tête
+
+            – Je ne te donnerai pas ma fille. Je t'ai déjà dit que j'étais un homme pauvre
+
+            – Si tu n'acceptes pas, je te donne une nouvelle épreuve
+
+            – D'accord pour une autre épreuve
+
+            Alors, la fille cadette dit à son père qu'elle voulait bien l'épouser. Il essaya de la convaincre de ne pas le faire, mais en vain. Alors il dit au fils du roi
+
+            – Ma fille accepte de t'épouser. Quelle sera sa dot ?”
+
+            – Je lui donnerai ce qu'elle voudra
+
+            La jeune fille demanda son poids en argent. On apporta une balance, elle se mit sur l'un des plateaux et on la pesa. Puis elle demanda au fils du roi de lui donner un jour de délai avant la nuit des noces, et le père lui fit jurer de ne pas la tuer pour boire son sang.
+
+            La jeune fille se rendit alors chez le confiseur et lui demanda de lui confectionner pour le lendemain, un mannequin qui soit exactement à son image, et de verser dans son ventre du miel. Elle lui donna 5000 roupies de plus que les 20 000 qu'il demandait. Le confiseur moulut le mannequin à l'image exacte de la jeune fille. Il le suspendit à une poulie afin qu'il puisse être articulé et, le jour des noces, il le remit à la jeune fille. Elle le déposa sur le lit et se cacha sous le lit. La nuit des noces, le fils du roi s'approcha d'elle et lui dit, “alors c'est toi qui m'a fait débourser ton poids ? Es-tu des plus belles ?”. Elle disait ‘oui’ de la tête. Il avait beau répéter sa question, elle ne lui répondait pas. Alors il s'énerva, sortit son poignard et le planta dans son ventre. Alors il dit “si ton sang est de miel à quoi ressembles-tu?”, et il but du miel.
+
+            Puis il se dit “si son sang est de miel, que doit être sa chaire !”, et il sortit son poignard pour se suicider. A ce moment, la jeune fille sortit de sa cachette et lui retint la main :
+
+            – Que fais-tu ?”.
+
+            – Et toi, qui es-tu ? Un humain ou un djinn ?
+
+            – Je suis de la meilleure espèce des humains, et je suis ta femme. Ça, c'est une confiserie !
+
+            – C'est toi qui m'a joué tout ce mauvais tour ?
+
+            – Oui, c'est moi. 
+
+    zaar:
+        name: "Zaar"
+        glottonym: "Zaar (Saya)"
+        country: "Nigéria"
+        family: "Tchadique"
+        speakers: "300.000"
+        audio: "zaar.mp3"
+        position: "[[5.6958548, 15.9552997]]"
+        authors: [caron]
+        content: |
+            **Pas de d'information supplémentaire disponible pour le moment.**
+
+    gbaya:
+        name: "Gbaya"
+        glottonym: "Gbáyá ɓòdòè"
+        country: "République Centrafricaine, Cameroun"
+        family: "Oubanguien"
+        speakers: "857.000"
+        audio: "gbaya.mp3"
+        position: "[[5.6958548, 15.9552997]]"
+        authors: [roulon-doko]
+        content: |
+            Les Gbaya sont une population de plus de 800000 personnes qui occupe un territoire situé pour les quatre cinquième à l’ouest de la République Centrafricaine et pour le dernier cinquième au centre-est du Cameroun. Le groupe numériquement le plus important appelé Gbaya kara ou gbaya du Nord est subdivisé en plusieurs sous-groupes dont font partie les Gbaya ɓòdòè chez qui j'ai travaillé. Ceux-ci forment un groupe homogène d’environ 5000 personnes réparties en une quarantaine de villages au sud-ouest de Bouar (R.C.A.).
+
+            Le gbaya est une langue oubanguienne du sous-groupe Adamawa oriental (phylum Niger-Congo). Le gbaya du Nord-ouest qui fait partie du groupe Gbaya-Mandja-Ngbaka comprend six dialectes : quatre en République Centrafricaine [ɓòdòè, ɓòkpàn, ɓòɲìnà, ɓùgùì] couramment regroupés sous l’appellation Gbaya-kara, et deux au Cameroun [ɓòyà and yàáyùùwèè]. Cette étude traite du Gbaya ɓòdòè qui est parlé par 5000 personnes à l’Ouest de la R.C.A.
+
+            Les Gbaya ɓòdòè sont une société de chasseurs-cueilleurs-cultivateurs. Ils vivent dans une savane arbustive très verte sillonnée par de nombreuses petites rivières dont les berges sont couvertes de forêts, exploitant toute l’année les ressources spontanées de leur milieu naturel par la chasse et la collecte, tout en pratiquant une petite culture (manioc, sésame et plantes vivrières). Sur le plan technologique, ils façonnent des poteries, confectionnent des vanneries, travaillent le bois et le fer dont ils étaient autrefois producteurs. Ils se caractérisent par une hiérarchisation sociale très réduite : il n’y a pas de métier réservé dont un individu ou un groupe pourrait revendiquer l’exclusivité. Outre les nécessaires activités de subsistance, chacun se livre aux occupations de son choix. Culture de tradition orale, le savoir est commun à tous et chacun peut y avoir également accès.
+
+            **Source :** [Page sur le Gbaya](http://harmodio.free.fr/cartographies/Gbaya/Gbaya.html)
+
+    bambara:
+        name: "Bambara"
+        glottonym: "Bambara"
+        country: "Mali, Sénégal"
+        family: "Niger-Congo"
+        speakers: "4.000.000"
+        audio: "gbaya.mp3"
+        position: "[[17.5706920, -3.9961660], [14.4974010, -14.4523620]]"
+        authors: [vydrin]
+        images:
+            "images/langues/bambara1.jpg": ""
+            "images/langues/bambara2.jpg": ""
+            "images/langues/bambara3.jpg": ""
+        content: |
+            Le Bamabara est une langue parlée au Mali et au Sénégal. Il y a environ 4 millions, plus 10 millions de locuteurs secondaires.
+
+            * Classification par famille : bambara < Manding < Mandé Ouest < Mandé < Niger-Congo
+
+    dan:
+        name: "Dan"
+        glottonym: "Dan,Gio,Julaningbè"
+        country: "Côte d’Ivoire, Liberai, Guinée"
+        family: "Niger-Congo"
+        speakers: "1.600.000"
+        audio: "dan.mp3"
+        position: "[[7.5399890, -5.5470800]]"
+        authors: [vydrin]
+        content: |
+            Le nombre de locuteurs est estimé à 1.6 millions de personnes en 2012.
+
+            * Classification par famille : Dan < Mandé-Sud < Mandé Sud-Est < Mande < Niger-Congo
+
+    goo:
+        name: "Goo"
+        authors: [vydrin]
+        glottonym: "Goo"
+        country: "Côte d'Ivoire"
+        family: "Niger-Congo"
+        speaker: "7.000-8.000"
+        position: "[[7.5399890, -5.5470800]]"
+        content: |
+            **Pas de d'information supplémentaire disponible pour le moment.**
+
+    saami:
+        name: "Saami de Lule"
+        glottonym: "Julevsámegiella"
+        country: "Norvège, Suède"
+        family: "Finno-ougrienne"
+        speaker: "600"
+        audio: "saami.mp3"
+        position: "[[68.029410, 16.515948]]"
+        authors: [fangel-gustavson]
+        content: |
+            Référence : MORÉN-DUOLLJÀ, B. (2013.) Lule Saami Morphology: Back to Basics. Presentation. II workshop. University of Tromsø. 19 Feb. 2013
+
+            Ressources en ligne :
+
+            * [Nuoraj TV](https://www.youtube.com/channel/UClOQ9tyGfUrHauclHDezq8A)
+            * [Saami culture](http://www.visitnordkyn.com/)
+
+            ### Traduction de l'audio : Måsske
+            
+            *Transcription de [Laboratoire de Phonétique et Phonologie Noora Fangel-Gustavson](http://lpp.in2p3.fr/?lang=fr)*
+
+            Je suis sur le chemin d’un petit village qui n’a pas de routes. L’endroit s’appelle Måsske et pour me rendre là-bas je dois prendre un bateau. Chaque été on organise ”La semaine Saami de Lule” à ce joli endroit. 
