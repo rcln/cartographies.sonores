@@ -15,6 +15,9 @@ def get_public_folder():
 def get_thumb_folder():
     return os.path.join(get_public_folder(), "thumbnails/")
 
+def get_script_folder():
+    return os.path.dirname(os.path.realpath(__file__))
+
 def remove_content(folder):
     for the_file in os.listdir(folder):
         file_path = os.path.join(folder, the_file)
@@ -33,7 +36,7 @@ def resize_and_crop(img_path, modified_path, size):
 
 def load_authors(cursor):
     author_ids = {}
-    with open("./authors.yml") as handler:
+    with open(os.path.join(get_script_folder(), "authors.yml")) as handler:
         data = yaml.load(handler)
         for k, v in data['authors'].items():
             name = v.get('name', None)
@@ -51,7 +54,7 @@ def load_languages(cursor, author_ids):
     thumb_folder = get_thumb_folder()
     remove_content(thumb_folder)
 
-    with open("./languages.yml") as handler:
+    with open(os.path.join(get_script_folder(), "languages.yml")) as handler:
         data = yaml.load(handler)
         for k, v in data['languages'].items():
             name = v.get('name', None)
@@ -88,7 +91,17 @@ def load_languages(cursor, author_ids):
                 """, (author_ids[author], k))
 
 try:
-    con = mysql.connector.connect(host="localhost", user="root", password="root", database="cartographies")
+    with open(os.path.join(get_script_folder(), "../config.json")) as handler:
+        data = json.load(handler)
+    config = {}
+    config["host"] = data["db"]["host"]
+    config["user"] = data["db"]["user"]
+    config["password"] = data["db"]["password"]
+    config["database"] = data["db"]["database"]
+    if "socketPath" in data["db"]:
+        config["unix_socket"] = data["db"]["socketPath"]
+
+    con = mysql.connector.connect(**config)
         
     cur = con.cursor()
     
