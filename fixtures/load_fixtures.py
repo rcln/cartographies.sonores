@@ -1,4 +1,4 @@
-#!/bin/python
+#!/bin/python3
 
 import yaml, json
 import os, shutil
@@ -173,6 +173,9 @@ try:
     con.commit()
     
 except mysql.connector.Error as e:
+    print("MySQL Error")
+    print(e)
+except Exception as e:
     print(e)
 
 finally:
