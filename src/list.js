@@ -14,7 +14,7 @@ var LanguageList = (function (Stores, Actions, Dispatcher) {
                 if (props.header)
                     return <th key={col}>{v}</th>;
                 else
-                    return <td key={col}><Link to="langue" params={{langue_id: props.item_id}}>{v}</Link></td>
+                    return <td className={ "status-" + props.status} key={col}><Link to="langue" params={{langue_id: props.item_id}}>{v}</Link></td>
             }).toArray();
 
             var style = { display: props.display ? 'table-row' : 'none' };
@@ -57,7 +57,7 @@ var LanguageList = (function (Stores, Actions, Dispatcher) {
                 return <TableRow 
                             key={i}
                             items={items} 
-                            callback={props.callback}
+                            status={r.get('status')}
                             display={state.display.get(i)}
                             item_id={r.get('id')} />
             }).toArray();
@@ -92,13 +92,9 @@ var LanguageList = (function (Stores, Actions, Dispatcher) {
         },
 
         render: function() {
-            var callback = function(id) {
-                Actions.app.showDetails(id);
-            };
             return (
                     <Table
                         data={this.state.data}
-                        callback={callback}
                         columns={Immutable.List(['name', 'glottonym', 'country', 'family', "speakers"])}
                         column_names={Immutable.List(['Langue', 'Glottonyme', 'Pays', 'Famille', "Locuteurs"])}
                     />

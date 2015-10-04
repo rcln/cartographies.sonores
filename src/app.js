@@ -1,4 +1,8 @@
 $(function () {
+    $(document).bind('cbox_complete', function(){
+
+    });
+
     var DefaultRoute = ReactRouter.DefaultRoute;
     var Link = ReactRouter.Link;
     var Route = ReactRouter.Route;

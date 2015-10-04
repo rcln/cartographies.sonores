@@ -3,13 +3,6 @@ var LanguageMap = (function (Stores, Actions, Dispatcher) {
     var module = {};
 
     module.popup_callback = function (id, audio_id) {
-        /*
-         * Pause audio
-        if (audio_id != "null") {
-            document.getElementById(audio_id).pause();
-        }
-        */
-
         Actions.app.showDetails(id);
     };
 
@@ -38,7 +31,15 @@ var LanguageMap = (function (Stores, Actions, Dispatcher) {
                     var lat = position.get(0);
                     var lon = position.get(1);
 
-                    var marker = L.marker([lat, lon]).addTo(map);
+                    var icon_opt = row.get('status');
+                    if (icon_opt == "dangers")
+                        icon_opt = {icon: LRedIcon};
+                    else if (icon_opt == "morte")
+                        icon_opt = {icon: LGreyIcon};
+                    else
+                        icon_opt = {};
+
+                    var marker = L.marker([lat, lon], icon_opt).addTo(map);
                     if (row.get('audio') != null) {
                         var audio_id = 'audio-player-' + row.get('id');
                         var audio = '<hr /><div><audio controls="controls" id="' + audio_id + '" name="' + audio_id + '">' +

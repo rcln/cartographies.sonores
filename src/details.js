@@ -31,9 +31,32 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
         }
     });
 
+    var AudioView = React.createClass({
+        render: function () {
+            if (this.props.audio != null)
+            {
+                return (
+                        <div className="showback">
+                            <h4>Audio</h4>
+                            <audio controls="controls">
+                                <source src={"audio/" + this.props.audio} type="audio/mpeg" />
+                            </audio>
+                        </div>
+                       );
+            }
+            else
+            {
+                return <div></div>;
+            }
+        }
+    });
+
     var GalleryView = React.createClass({
         _load_colorbox: function () {
-            $(".group1").colorbox({rel:'group1', height:'80%', scale: true});
+            $(".group1").colorbox({
+                height:'80%', 
+                scale: true
+            });
         }, 
 
         componentDidMount: function () {
@@ -76,6 +99,8 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
                 lis.push(<li key={2}>Pays : { this.props.data.get('country') }</li>);
             if (this.props.data.get('family') != null)
                 lis.push(<li key={3}>Famille : { this.props.data.get('family') }</li>);
+            if (this.props.data.get('speakers') != null)
+                lis.push(<li key={3}>Locuteurs : { this.props.data.get('speakers') }</li>);
 
             return (
                 <div className="showback">
@@ -97,15 +122,6 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
                         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
                     }).addTo(this._map);
 
-            this._markers = this.props.positions.map(function (position) {
-                var lat = position.get(0);
-                var lon = position.get(1);
-
-                return L.marker([lat, lon]).addTo(this._map);
-            }.bind(this));
-
-            var group = new L.featureGroup(this._markers.toArray());
-            this._map.fitBounds(group.getBounds(), {padding: [50, 50]});
 
             this._createMarkers();
         },
@@ -123,11 +139,19 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
         },
 
         _createMarkers: function () {
+            var icon_opt = this.props.status;
+            if (icon_opt == "dangers")
+                icon_opt = {icon: LRedIcon};
+            else if (icon_opt == "morte")
+                icon_opt = {icon: LGreyIcon};
+            else
+                icon_opt = {};
+
             this._markers = this.props.positions.map(function (position) {
                 var lat = position.get(0);
                 var lon = position.get(1);
 
-                return L.marker([lat, lon]).addTo(this._map);
+                return L.marker([lat, lon], icon_opt).addTo(this._map);
             }.bind(this));
 
             var group = new L.featureGroup(this._markers.toArray());
@@ -141,7 +165,7 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
                 return (
                     <div className="showback">
                         <h4>Localisation</h4>
-                        <MapViewLeaflet positions={ this.props.positions } />
+                        <MapViewLeaflet positions={ this.props.positions } status={ this.props.status }/>
                     </div>
                 );
             } else {
@@ -185,7 +209,8 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
 
                                 </div>
                                 <div className="col-lg-3">
-                                    <MapView positions={ this.state.positions } />
+                                    <AudioView audio={ this.state.audio } />
+                                    <MapView positions={ this.state.positions } status={ this.state.status }/>
                                     <DetailView data={ this.state.data } />
                                     <GalleryView images={ this.state.images } />
                                     <AuthorView authors={ this.state.authors } />
@@ -216,7 +241,9 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
                     name: data.get('name'),
                     authors: data.get('authors'),
                     positions: data.get('positions'),
-                    images: data.get('images')
+                    images: data.get('images'),
+                    status: data.get('status'),
+                    audio: data.get('audio')
                 };
             }
         }

@@ -103,7 +103,8 @@ app.get(config.server.path + 'data', function(req, res) {
                 country: (row.country == null ? "-" : row.country),
                 positions: positions,
                 audio: row.audio,
-                speakers: (row.speakers == null ? "-" : row.speakers)
+                speakers: (row.speakers == null ? "-" : row.speakers),
+                status: row.status
             });
         }
 

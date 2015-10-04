@@ -54,6 +54,7 @@ languages:
         name: "Koyi Rai"
         country: "Népal"
         speakers: "2.000"
+        status: "dangers"
         audio: "koyirai.mp3"
         authors: [lahaussois]
         position: "[[27.39746, 86.88224]]"
@@ -330,6 +331,7 @@ languages:
         country: "Norvège, Suède"
         family: "Finno-ougrienne"
         speaker: "600"
+        status: "dangers"
         audio: "saami.mp3"
         position: "[[68.029410, 16.515948]]"
         authors: [fangel-gustavson]

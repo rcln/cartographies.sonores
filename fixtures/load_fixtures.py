@@ -66,6 +66,7 @@ def load_languages(cursor, author_ids):
             speakers = v.get('speakers', None)
             audio = v.get('audio', None)
             images = v.get('images', None)
+            status = v.get('status', 'vivante')
 
             if images is not None and len(images) == 0:
                 images = None
@@ -80,9 +81,9 @@ def load_languages(cursor, author_ids):
                  
             
             cursor.execute("""
-                INSERT INTO `language` (`id`, `name`, `glottonym`, `family`, `position`, `content`, `speakers`, `audio`, `images`, `country`) VALUES
-                (%s, %s,%s,%s,%s,%s, %s, %s, %s, %s);
-            """, (k, name, glottonym, family, position, content, speakers, audio, images, country))
+                INSERT INTO `language` (`id`, `name`, `glottonym`, `family`, `position`, `content`, `speakers`, `audio`, `images`, `country`, `status`) VALUES
+                (%s, %s,%s,%s,%s,%s, %s, %s, %s, %s, %s);
+            """, (k, name, glottonym, family, position, content, speakers, audio, images, country, status))
             
             for author in v.get("authors", ()):
                 cursor.execute("""
@@ -134,7 +135,8 @@ try:
           `speakers` varchar(255) COLLATE utf8_bin DEFAULT NULL,
           `content` text COLLATE utf8_bin NOT NULL,
           `images` text COLLATE utf8_bin DEFAULT NULL,
-          `audio` varchar(255) COLLATE utf8_bin DEFAULT NULL
+          `audio` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+          `status` enum('vivante','dangers','morte') COLLATE utf8_bin NOT NULL DEFAULT 'vivante'
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
     """)
     
