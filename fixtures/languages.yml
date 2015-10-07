@@ -71,9 +71,11 @@ languages:
         glottonym: "Haoussa"
         country: Sud-Niger, Nord-Nigéria
         family: tchadique
-        speakers: "45.000.000"
+        speakers: "> 45.000.000"
         position: "[[12.0021794,  8.5919561]]"
         content: |
+            * Classification par famille: langue tchadique (famille appartenant au phylum Afroasiatique), de la branche occidentale, sous-branche A.1 (Newman 2013)
+
             ### Transcription de l'audio par Bernard Caron
             C’est l’histoire de Gizo, l’araignée, et de sa femme Koki, la mante religieuse. Ils étaient tous les deux ensemble quand il dit à Koki, je veux manger de la sauce au chanvre. Alors il alla... alors elle dit bon, et elle, où va-t-elle trouver ce chanvre? Il fallait qu’elle aille... Ne fallait-il pas qu’elle aille à la ville? Il fallait qu’elle aille... il fallait qu’elle à la maison, à la ville où elle était née.
 
@@ -262,7 +264,9 @@ languages:
         position: "[[5.6958548, 15.9552997]]"
         authors: [caron]
         content: |
-            **Pas de d'information supplémentaire disponible pour le moment.**
+            ### Traduction de l'audio :  Deux méchants hommes
+            
+            Un homme et son fils. Il était une fois, un homme et son fils. Ils partirent cultiver leurs champs. Sur le chemin, l'homme vit un scorpion noir. Il dit à son fils que c'était une prune et d'aller la cueillir. Le garçon y alla, et avança sa main pour le prendre quand le scorpion le piqua. Un autre homme accompagné de ses amis était parti ramasser du bois. Il revenaient à la maison quand l'homme qui marchait en dernier vit un serpent sur le bois que portait son ami. Il lui dit alors qu'il allait bientôt laisser tomber sa charge. Son ami lui dit alors: "Quoi?" L'homme répondit que quoi qu'il arrive, lui, bientôt allait laisser tomber sa charge. Ils reprirent leur marche. Peu après qu'il lui eut parlé ainsi, le serpent mordit l'homme qui laissa tomber sa charge. L'homme lui dit alors: "Eh, ne t'avais-je pas dit que bientôt tu allais laisser tomber ta charge?" Bon, tu as compris. De ce deux hommes, lequel est le plus méchant? 
 
     gbaya:
         name: "Gbaya"
@@ -272,15 +276,50 @@ languages:
         speakers: "857.000"
         audio: "gbaya.mp3"
         position: "[[5.6958548, 15.9552997]]"
+        images:
+            "images/langues/gbaya/tambour.jpg": "Autour du tambour"
+            "images/langues/gbaya/causerie.jpg": "Causerie entre garçons"
+            "images/langues/gbaya/coiffure.jpg": "Coiffure"
+            "images/langues/gbaya/enfant.jpg": "Enfant s'amusant près de son père"
         authors: [roulon-doko]
         content: |
+            *Source : [Page sur le Gbaya](http://harmodio.free.fr/cartographies/Gbaya/Gbaya.html)*
+
             Les Gbaya sont une population de plus de 800000 personnes qui occupe un territoire situé pour les quatre cinquième à l’ouest de la République Centrafricaine et pour le dernier cinquième au centre-est du Cameroun. Le groupe numériquement le plus important appelé Gbaya kara ou gbaya du Nord est subdivisé en plusieurs sous-groupes dont font partie les Gbaya ɓòdòè chez qui j'ai travaillé. Ceux-ci forment un groupe homogène d’environ 5000 personnes réparties en une quarantaine de villages au sud-ouest de Bouar (R.C.A.).
+
+            <center>![](images/langues/gbaya/carte.png)</center>
 
             Le gbaya est une langue oubanguienne du sous-groupe Adamawa oriental (phylum Niger-Congo). Le gbaya du Nord-ouest qui fait partie du groupe Gbaya-Mandja-Ngbaka comprend six dialectes : quatre en République Centrafricaine [ɓòdòè, ɓòkpàn, ɓòɲìnà, ɓùgùì] couramment regroupés sous l’appellation Gbaya-kara, et deux au Cameroun [ɓòyà and yàáyùùwèè]. Cette étude traite du Gbaya ɓòdòè qui est parlé par 5000 personnes à l’Ouest de la R.C.A.
 
             Les Gbaya ɓòdòè sont une société de chasseurs-cueilleurs-cultivateurs. Ils vivent dans une savane arbustive très verte sillonnée par de nombreuses petites rivières dont les berges sont couvertes de forêts, exploitant toute l’année les ressources spontanées de leur milieu naturel par la chasse et la collecte, tout en pratiquant une petite culture (manioc, sésame et plantes vivrières). Sur le plan technologique, ils façonnent des poteries, confectionnent des vanneries, travaillent le bois et le fer dont ils étaient autrefois producteurs. Ils se caractérisent par une hiérarchisation sociale très réduite : il n’y a pas de métier réservé dont un individu ou un groupe pourrait revendiquer l’exclusivité. Outre les nécessaires activités de subsistance, chacun se livre aux occupations de son choix. Culture de tradition orale, le savoir est commun à tous et chacun peut y avoir également accès.
 
-            **Source :** [Page sur le Gbaya](http://harmodio.free.fr/cartographies/Gbaya/Gbaya.html)
+            ### Apprendre à parler : tɔ̰ nú ou la maîtrise de l'outil langue
+
+            Lorsque le petit enfant apprend à parler, c'est-à-dire à maîtriser la langue (tɔ̰́ɔ̰́ nú gbáyá), il existe pour l'aider pendant cette phase d'apprentissage : (i) une technique pour lui faciliter l'acquisition de certains éléments de la langue, (ii) des jeux qui lui permettent de s'exercer tant à bien prononcer qu'à bien découper les syllabes.
+            
+            #### Un parler bébé
+
+            Tout d'abord, il existe un parler bébé qui ne consiste pas à modifier un certain nombre de mots, comme le font certain parents en France, mais est une technique pédagogique qui n'est utilisée que pour un seul phonème, la vibrante à un seul battement ‘r’ dont la réalisation est jugée difficile. Pour ce faire, les adultes et pas seulement les parents, produisent lorsqu'ils s'adressent à un petit enfant une latérale ‘l’ au lieu de la battue ‘r’ – ndálà pour ndárà « chaussure » par exemple –, ces deux phonèmes ayant le même point d'articulation apico-alvéolaire. Une fois l'enfant habitué à placer correctement sa langue, il lui sera plus facile de produire en ce même point un battement et donc de réaliser correctement cette vibrante.
+
+                 
+            #### Des virelangues
+
+            Par ailleurs il existe des virelangues qui permettent aux enfants de s'exercer de façon ludique à distinguer des sons dont la réalisation est proche mais que la langue distingue.
+
+            #### Un parler de type 'javanais'
+
+            Il existe aussi un parler ludique de type javanais que pratiquent les jeunes. Il s'agit de faire suivre chaque syllabe d'une syllabe commençant par un ‘f’ suivi d'une consonne identique à celle de la syllabe précédente, l'ensemble étant affecté d'un schème BH. Ainsi par exemple « viens ici » mɛ̀ tɛ́ hɛ̰̀ devient mɛ̀fɛ́ tɛ̀fɛ́ hɛ̰̀fɛ̰́. Un tel exercice montre que le découpage syllabique est bien maîtrisé par ceux qui l'utilisent.
+
+
+            ### Traduction de l'audio : Salutations
+            *Transcription de Paulette Roulon*
+
+            - Le matin : fait-il jour pour toi ?
+            - Il fait jour pour moi.
+            - Le matin : fait-il frais pour toi ?
+            - Il fait frais pour moi.
+            - Quand on voit quelqu'un au loin c'est:
+            - Saluons-nous! (Serrons-nous la main) 
 
     bambara:
         name: "Bambara"
@@ -320,7 +359,7 @@ languages:
         glottonym: "Goo"
         country: "Côte d'Ivoire"
         family: "Niger-Congo"
-        speaker: "7.000-8.000"
+        speakers: "7.000-8.000"
         position: "[[7.5399890, -5.5470800]]"
         content: |
             **Pas de d'information supplémentaire disponible pour le moment.**
@@ -330,7 +369,7 @@ languages:
         glottonym: "Julevsámegiella"
         country: "Norvège, Suède"
         family: "Finno-ougrienne"
-        speaker: "600"
+        speakers: "600"
         status: "dangers"
         audio: "saami.mp3"
         position: "[[68.029410, 16.515948]]"

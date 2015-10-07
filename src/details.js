@@ -100,7 +100,7 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
             if (this.props.data.get('family') != null)
                 lis.push(<li key={3}>Famille : { this.props.data.get('family') }</li>);
             if (this.props.data.get('speakers') != null)
-                lis.push(<li key={3}>Locuteurs : { this.props.data.get('speakers') }</li>);
+                lis.push(<li key={4}>Locuteurs : { this.props.data.get('speakers') }</li>);
 
             return (
                 <div className="showback">

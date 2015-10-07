@@ -28,17 +28,14 @@
     cursor: pointer;
 }
 
-.tiny_image img {
-    height: 200px;
-}
-
-#cboxPrevious {
-    display: none;
-}
 
 .status-dangers a {
     color: red;
 }
 .status-morte a {
     color: grey;
+}
+
+#main-content li {
+    list-style-type: circle;
 }
