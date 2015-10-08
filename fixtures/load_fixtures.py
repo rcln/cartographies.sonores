@@ -40,12 +40,12 @@ def load_authors(cursor):
         data = yaml.load(handler)
         for k, v in data['authors'].items():
             name = v.get('name', None)
-            email = v.get('email', None)
+            website = v.get('website', None)
             about = v.get('about', None)
             cursor.execute("""
-                INSERT INTO `author` (`name`, `email`, `about`) VALUES
+                INSERT INTO `author` (`name`, `website`, `about`) VALUES
                 (%s, %s, %s);
-            """, (name, email, about))
+            """, (name, website, about))
             author_ids[k] = cursor.lastrowid
     
     return author_ids
@@ -119,7 +119,7 @@ try:
         CREATE TABLE IF NOT EXISTS `author` (
           `id` int(11) NOT NULL,
           `name` varchar(255) COLLATE utf8_bin NOT NULL,
-          `email` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+          `website` varchar(255) COLLATE utf8_bin DEFAULT NULL,
           `about` text COLLATE utf8_bin
         ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
     """)

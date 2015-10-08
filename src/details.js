@@ -8,23 +8,37 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
 
             var array = this.props.authors.map(function(author, i) {
                 var name = author.get('name');
+                var website = author.get('website');
+                console.log(website);
+
+                if (website != null)
+                    website = (
+                            <a href={ website }>
+                                &nbsp;
+                                <span className="glyphicon glyphicon-globe" />
+                            </a>
+                            );
 
                 if (author.get('about').length > 0) 
                 {
                     return (
                         <div key={i}>
-                            <p>{ name }</p>
+                            <h4>{ name } {website}</h4>
                             <div dangerouslySetInnerHTML={{__html: marked(author.get('about')) }} />
                         </div>
                     );
                 }
                 else
-                    return <div key={i}><p>{ name }</p></div>;
+                    return (
+                        <div key={i}>
+                            <h4>{ name } {website}</h4>
+                        </div>
+                    );
             }).toArray();
 
             return (
                 <div className="showback">
-                    <h4>Auteur</h4>
+                    <h3>Auteur</h3>
                     { array }
                 </div>
             )
@@ -37,7 +51,7 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
             {
                 return (
                         <div className="showback">
-                            <h4>Audio</h4>
+                            <h3>Audio</h3>
                             <audio controls="controls">
                                 <source src={"audio/" + this.props.audio} type="audio/mpeg" />
                             </audio>
@@ -80,7 +94,7 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
             }).toArray();
             return (
                     <div className="showback">
-                        <h4>Galerie</h4>
+                        <h3>Galerie</h3>
                         <div className="row">
                             { images }
                         </div>
@@ -96,7 +110,7 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
             if (this.props.data.get('glottonym') != null)
                 lis.push(<li key={1}>Glottonyme : { this.props.data.get('glottonym') }</li>);
             if (this.props.data.get('country') != null)
-                lis.push(<li key={2}>Pays : { this.props.data.get('country') }</li>);
+                lis.push(<li key={2}>Région(s) : { this.props.data.get('country') }</li>);
             if (this.props.data.get('family') != null)
                 lis.push(<li key={3}>Famille : { this.props.data.get('family') }</li>);
             if (this.props.data.get('speakers') != null)
@@ -104,7 +118,7 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
 
             return (
                 <div className="showback">
-                    <h4>Détails</h4>
+                    <h3>Détails</h3>
                     <ul>{ lis }</ul>
                 </div>
             );
@@ -164,7 +178,7 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
             if (this.props.positions != null) {
                 return (
                     <div className="showback">
-                        <h4>Localisation</h4>
+                        <h3>Localisation</h3>
                         <MapViewLeaflet positions={ this.props.positions } status={ this.props.status }/>
                     </div>
                 );

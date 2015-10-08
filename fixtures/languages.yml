@@ -304,12 +304,19 @@ languages:
                  
             #### Des virelangues
 
-            Par ailleurs il existe des virelangues qui permettent aux enfants de s'exercer de façon ludique à distinguer des sons dont la réalisation est proche mais que la langue distingue.
+            Par ailleurs il existe des virelangues qui permettent aux enfants de s'exercer de façon ludique à distinguer des sons dont la réalisation est proche mais que la langue distingue. Ainsi en gbaya on trouve les virelangues suivants pour distinguer entre les nasales ‘m’, ‘n’ et ‘ɲ’:
+            <center>![](images/langues/gbaya/traduction1.png)</center>
 
             #### Un parler de type 'javanais'
 
             Il existe aussi un parler ludique de type javanais que pratiquent les jeunes. Il s'agit de faire suivre chaque syllabe d'une syllabe commençant par un ‘f’ suivi d'une consonne identique à celle de la syllabe précédente, l'ensemble étant affecté d'un schème BH. Ainsi par exemple « viens ici » mɛ̀ tɛ́ hɛ̰̀ devient mɛ̀fɛ́ tɛ̀fɛ́ hɛ̰̀fɛ̰́. Un tel exercice montre que le découpage syllabique est bien maîtrisé par ceux qui l'utilisent.
 
+            ### Les salutations
+            Les salutations sont brèves et dépendent de la période de la journée. Celui qui salue pose la question et l'autre y répond comme l'indiquent les dialogues suivants. 
+            <center>![](images/langues/gbaya/traduction2.png)</center>
+
+            On peut aussi interpeller quelqu'un pour le saluer, on vient ensuite lui serrer la main. La poignée de main est la façon ordinaire de se dire bonjour.
+            <center>![](images/langues/gbaya/traduction3.png)</center>
 
             ### Traduction de l'audio : Salutations
             *Transcription de Paulette Roulon*
@@ -327,17 +334,36 @@ languages:
         country: "Mali, Sénégal"
         family: "Niger-Congo"
         speakers: "4.000.000"
-        audio: "gbaya.mp3"
+        audio: "bambara.mp3"
         position: "[[17.5706920, -3.9961660], [14.4974010, -14.4523620]]"
         authors: [vydrin]
         images:
             "images/langues/bambara1.jpg": ""
             "images/langues/bambara2.jpg": ""
             "images/langues/bambara3.jpg": ""
+            "images/langues/bambara4.jpg": ""
+            "images/langues/bambara5.jpg": ""
         content: |
+
             Le Bamabara est une langue parlée au Mali et au Sénégal. Il y a environ 4 millions, plus 10 millions de locuteurs secondaires.
 
             * Classification par famille : bambara < Manding < Mandé Ouest < Mandé < Niger-Congo
+
+            ### Traduction de l'audio : L’Ancien Ghana
+            *Traduction de Valentin Vydrin*
+
+            Autrefois, les Soninkés détenaient le pouvoir. Leur royaume était Ouagadou (Ghana), sa capitale était Koumbi. La base du pouvoir des Soninkés était l’or. Ils ne s’occupaient pas de commerce, mais les commerçants arabes importe du sel à Ouagadou, il payaient le roi de Ouagadou. Quand ils exportaient de l’or, ils payaient le roi de Ouagadou. Les Soninké ont vaincu les Songhaï, ils étaient plus puissants que les Touaregs. Mais en 1076, les Maures et les Touaregs ont attaqué le Koumbi et s’en sont accaparé. En conséquence, le Ouagadou a décliné. 
+
+            ### Transcription de l'audio
+            *Transcription par Valentin Vydrin*
+
+            #### Wágadu
+
+            Fɔ́lɔ, sé\` tùn bɛ́ Màrakáẁ dè yé. Ù ká màrá\` tɔ́gɔ\` tùn yé kó Wágadu, à fáaba\` tùn yé Kúnbi dè yé. Màrakáẁ ká fàngá\` báju\` tùn yé sánu\` dè yé. Ǔ yɛ̀rɛ́ tùn tɛ́ jàgó\` kɛ́, ǹká, ní Làrabú jùláẁ tǔn nàna Wágadu ní kɔ̀gɔ́\` yé, ǔ tùn bɛ́ Wágadu fàamá\` sàra. N’ù bɛ́ bɔ́ ní sánu\` yé, ǔ tùn bɛ́ Wágadu fàamá\` sàra. Màrakáẁ séra Kɔ́rɔbɔrɔẁ lá, ù ká fàngá\` tùn ká bòn ní Bùrudáamɛẁ tá\` fána yé. Ǹká sǎn bà kélen ní sàn bí\` wólonwila ní wɔ́ɔrɔ, Súrakaẁ ní Bùrudáamɛẁ bìnna Kúnbi kàn k’à mìnɛ́ fàngá\` lá. Kàbíni ò kɛ́ra, Wágadu nàgasira.
+
+            #### Wagadu
+
+            Fɔlɔ, se tun bɛ Marakaw de ye. U ka mara tɔgɔ tun ye ko Wagadu, a faaba tun ye Kunbi de ye. Marakaw ka fanga baju tun ye sanu de ye. U yɛrɛ tun tɛ jago kɛ, nka, ni Larabu julaw tun nana Wagadu ni kɔgɔ ye, u tun bɛ Wagadu faama sara. N’u bɛ bɔ ni sanu ye, u tun bɛ Wagadu faama sara. Marakaw sera Kɔrɔbɔrɔw la, u ka fanga tun ka bon ni Burudaamɛw ta fana ye. Nka san ba kelen ni san bi wolonwila ni wɔɔrɔ, Surakaw ni Burudaamɛw binna Kunbi kan k’a minɛ fanga la. Kabini o kɛra, Wagadu nagasira. 
 
     dan:
         name: "Dan"
@@ -348,11 +374,25 @@ languages:
         audio: "dan.mp3"
         position: "[[7.5399890, -5.5470800]]"
         authors: [vydrin]
+        images:
+            "images/langues/dan1.jpg": ""
+            "images/langues/dan2.jpg": ""
         content: |
             Le nombre de locuteurs est estimé à 1.6 millions de personnes en 2012.
 
             * Classification par famille : Dan < Mandé-Sud < Mandé Sud-Est < Mande < Niger-Congo
 
+            ### Traduction de l'audio : Une histoire drôle
+
+            *Traduction de Valentin Vydrin*
+            
+            Un jour dans une église un jeune homme. Il dirigeait les chants et les prières. Et les gens de l’église disaient tout le temps qu’il était très détendu! Tout le dimanche, il était détendu. Certains gens disaient qu’il avait un bon esprit. Mais autres disaient que non, qu’il y avait quelque chose dans cela qui n’était pas de bon esprit. Il y avait tout le temps cette division dans l’église. Ceux qui disaient que c’était le bon esprit, ils étaient d’un côté, et ceux qui disaient que ce n’était pas un bon esprit, que c’était une autre chose sous sa peau, il étaient d’un autre côté. Et cela continuait ainsi. Mais en fait, cet homme, lorsqu’il s’appretait à aller à l’église, il s’imbibait de vin. Et alors il venait et était très détendu, il agissait avec entrain en ravivant la messe. Maid Dieu voit tout. Un matin, il a envoyé son enfant pour qu’il achète du vin, et il lui a donné cinq mille francs. L’enfant a trouvé du vin, mais on n’avait pas de monnaie, et il a trop duré, et l’homme est parti à l’église, car c’était déjà l’heure. Ce jour-là, il était apathique, et les gens étaient étonnés: “Qu’est-ce qu’il y a ? Pourquoi est-ce qu’il est devenu si apathique ?” Il étaient en train d’en parler en le regardant, et voici un de ses fils est venu en courant. Il est entré à l’église, devant les yeux de tout le monde. Tout le monde s’est tu. L’homme a été supéfait. Il s’est arrêté, comme s’il était attaché. Et voici l’enfant s’est approché de son père et lui a dit: “Mon père, le vin que tu m’as dit d’acheter, on m’a dit qu’il n’a pas de monnaie”. 
+
+            ### Transcription de l'audio : “Yɩɩ -wɔn do ‘bha =në ‘ö ya
+            
+            *Transcription de Valentin Vydrin*
+
+            -Dhɛkaɔyi do ‘ka =dheglizë do ‘bha bha’ ‘gü, ‘yö ‘nëglɔɔnnë do ‘bha bha =në -ya kë ‘yö yö =dheglizë -dhɛ “dhiʋ̈. ‘Yö “tan –nu oo, bhɛa” –sü -nu oo ‘yö =ya yö- -nu –dhɛ “dhiʋ̈. ‘Ö =yɔɔ mü bha ‘a ‘yö mɛ -nu ‘ö ‘wo =dheglizë ‘gü bha, mɛ ‘bha –nu ‘wo pö ‘mɛ ‘ö ya =ya kë =tɔn “wɔwɔ -sü “gbɩɩ- -wa! =Dimangsii =gban “pɛpɛ ‘ka, yö -zë -yö “wɔwɔ -sü. Kö mɛ ‘bha –nu –wo “wɩ sië ‘mɛ bha –zuu “slʋ̈ʋ̈slʋ̈ =në ‘ö- ‘gü. “Kɛɛ kö mɛ ‘bha –nu –wo “wɩ sië ‘aabhoo, ‘pë =dhɔɔ -a =gban ‘yaa kë -zuu “slʋ̈ʋ̈slʋ̈ ‘ka. ‘Ö =yɔɔ mü kö “pɛdhe =ya –da –dheglizë bha –a ‘gü -mɛ -nu =zinng ‘gü. ‘Mɛ -nu ‘ö ‘wo- pö =dhɛ -zuu “slʋ̈ʋ̈slʋ̈ =në ‘mɛ bha ‘gü, ‘wo gun “pɛɛn “wɛɛ do ‘ka, ‘yö ‘mɛ -nu ‘ö ‘wo- pö =dhɛ ‘mɛ bha ‘wɔn “wɛɛ =në ‘ö- kwi =wlöö -zuu “slʋ̈ʋ̈slʋ̈ ‘yaa mü, woo =de ‘pö ‘wo gun “pɛɛn “wɛɛ do ‘ka. Wo ‘to –a ‘ka “dhʋ̈. Yaa” kö ‘ö- wo sië “dhʋ̈ bha, minë bha –yaa pö yöö nu –dheglizë ‘gü ‘yö =divɛŋ do –ma mü -kö “wɛ kpɛnŋkpɛnŋdhö. –Ya nu ‘yö =ya kë “wɔwɔsü ‘ka =ni; kë “dhʋ̈ kö -wa pö -yö “siʋ̈ -ya ‘wɔn –nu ‘gü. –Zlaan –de ‘pö, -a “yan ‘yaa- kë, -ka –dhɛ ga. –Dhɛkpaɔyi do ‘ka, dhia” “piʋ̈ bha ‘gü ‘yö ö bha ‘në yë -kë -divɛnng ‘dhɔ -dhɛ ‘gü, ‘yö- gba ‘wëë- “gblü do ‘ka. ‘Në bha 'dho 'o wo bha 'yö -kpan we bha –a –bha, “kɛɛ ‘yö ‘wëë- ‘sɛɛnnë’yaa gun =gwëë -kɔ yaa ‘ö ‘në bha ‘ö- -kë mü bha, -a –wɔn ‘gü, ‘yö gɔndënë bha ‘ö dho =dheglizë ‘gü. –A –gɛn –mü -dhɛ kö “dhɛdhɛ =ya –wo.-A –dhɛkpaɔyi ‘dhɛ bha- ‘ka, ‘yö -kë “wɔɔnwɔɔn ‘ka =ni, ‘yö mɛ -nu ‘wo- pö, ‘a “yʋ̈ =dɛɛ -yö mü -dhɛ -oo. ‘Mɛ ‘ö ya =ya kë -tɔn “wɔɔnwɔɔn –dɛɛ “gbɩɩ- -wa! –Wo –to –a pö -sü ‘ka “dhʋ̈ aa, ‘wo dho –dhɛga, -a gbö ‘në do ‘bha –yö nu sië “wɛ -viaviadhö. –Ya –da =dheglizë ‘gü mɛ =gban “pɛpɛ “yan –ya –ya =loo –a –ta. –Dhɛta =ya dɔ dinŋdhö. –Klingkliŋ =ya yö gɔndënë bha- -ta. =Ya ‘gbaannu “zɛnngdhö -dhɛ ‘pë ‘ö =waa- -kplü =në -a wo ‘dhö. –A ga, ‘në bha =ya nu ö dë “dhiʋ̈ -gɔ -yaa pö: N dë, ü bha –divɛnng ü kë- pö ‘a ‘dho- ‘dho- bha, -wa –pö =dhɛ ‘wëë- ga ‘sɛɛnnë ‘yaa ‘dhö. 
     goo:
         name: "Goo"
         authors: [vydrin]
@@ -387,3 +427,99 @@ languages:
             *Transcription de [Laboratoire de Phonétique et Phonologie Noora Fangel-Gustavson](http://lpp.in2p3.fr/?lang=fr)*
 
             Je suis sur le chemin d’un petit village qui n’a pas de routes. L’endroit s’appelle Måsske et pour me rendre là-bas je dois prendre un bateau. Chaque été on organise ”La semaine Saami de Lule” à ce joli endroit. 
+
+    capervdien:
+        name: "Capverdien"
+        glottonym: "kiriolu"
+        country: "Archipel du Cap-Vert"
+        family: "Créole (portugais)"
+        speakers: "1.000.000"
+        audio: "capverdien.mp3"
+        position: "[[15.005878, -23.516221]]"
+        authors: [quint]
+        content: |
+            Détails supplémentaires :
+
+            * Region : Archipel du Cap-Vert (Afrique de l'Ouest, 500.000 personnes) + diaspora (EU 300.000, Portugal 100.000, France 50.000, Pays-Bas 50.000, Sénégal 40.000, Angola 40.000
+            * Glottonyme kiriolu (santiagais), kriolu (autres variétés du Sud), kriol (variétés du Nord), berdiánu
+            * Classification par famille créole à base lexicale portugaise - Créole afro-portugais de l'Afrique de l'Ouest (anglais : Upper Guinea Creole) -
+
+            Référence supplémentaire : [Hommage multilingue au Petit Prince](http://www.unige.ch/lettres/linguistique/prince/)
+
+            ### Traduction de l'audio : On ne voit bien qu'avec le cœur 
+            *Antoine de Saint-Exupéry - Le Petit Prince / Traduction de Nicolas Quint et Aires Semedo*
+             On ne connaît que les choses que l'on apprivoise, dit le renard. Les hommes n'ont plus le temps de rien connaître. Ils achètent des choses toutes faites chez les marchands. Mais comme il n'existe point de marchands d'amis, les hommes n'ont plus d'amis. Si tu veux un ami, apprivoise-moi!
+
+            Adieu, dit le renard. Voici mon secret. Il est très simple: on ne voit bien qu'avec le coeur. L'essentiel est invisible pour les yeux. 
+
+            ### Transcription de l'audio
+            *Transcription de Nicolas Quint et Aires Semed*
+
+            -Só kel ki mansádu ki ta konxedu. Algen dja ka teni ténpu pa konxi náda. Ês ta kunpra kusa tudu fetu. Komu amigu ka ta bendedu gó, algen dja fika sen amigu. S-u kré ten amigu, mansâ-m !
+
+            Rapoza fla-l: -Diós bá ku bo. Gósi gó N ta kontâ-u kel segrédu. É kusa sinplis: só ku korason k-u ta odja dretu. Kel ki ta konta, odju ka ta odja. 
+
+    occitan:
+        name: "Occitan"
+        speakers: "500.000"
+        glottonym: "Occitan"
+        country: "France, Espagne, Italie"
+        family: "Gallo-roman"
+        audio: "occitan.mp3"
+        position: "[[43.693820, 1.432010]]"
+        authors: [quint]
+        content: |
+            ### Traduction de l'audio
+            Et la veille de sa noce, elle était bien inquiète, alors avec son amoureux ils se mirent dans un coin et elle lui disait:
+
+            * Dis donc mon Antoine, demain qu'est-ce qui va se passer?
+            * Oh eh bien rien, pourquoi?
+            * Mais si, où irons nous?
+            * Eh bien, nous irons pour commencer chez le maire.
+            * Tous les deux seuls?
+            * Mais non, avec tes parents, les miens, nos amis.
+            * Mon Dieu, qu'est-ce que j'aurai honte!
+            * Et après Antoine, où irions nous?
+            * Et bien nous irons chez le curé à l'église…
+            * Tous les deux seuls ?
+            * Mais non, avec tes parents, les miens, nos amis.
+            * Mon Dieu qu'est-ce que j'aurai honte !
+            * Et après, où irons-nous ?
+            * Eh bien, il y aura le photographe, il viendra, il nous photographiera.
+            * Tous les deux seuls ?
+            * Mais non, [avec] tes parents, les miens, nos amis.
+            * Mon Dieu qu'est-ce que j'aurai honte !
+            * Et après, Antoine ?
+            * Eh bien nous irons au restaurant pour manger.
+            * Tous les deux seuls ?
+            * Mais non, avec tes parents, les miens, nos amis.
+            * Mon Dieu qu'est-ce que j'aurai honte !
+            * Et après, qu'est-ce qui va se passer ?
+            * Après, eh bien nous irons danser.
+            * Tous les deux seuls ?
+            * Mais non, avec tes parents, les miens, nos amis.
+            * Mon Dieu qu'est-ce que j'aurai honte !
+            * Et après Antoine, où allons-nous aller ?
+            * Et bien nous irons au lit.
+            * Tous les deux seuls ?
+            * Mais oui !
+            * Eh bien cette fois mon Dieu je n'aurai plus honte ! 
+
+    creole:
+        name: "Creole casamançais"
+        authors: [quint]
+        glottonym: "Kriyol"
+        country: "Basse-Casamance, Sénégal"
+        speakers: "10.000"
+        status: "dangers"
+        audio: "cre-cas.mp3"
+        position: "[[12.559148, -16.274355]]"
+        content: |
+            
+                * Nombre de locuteurs : 20.000 dont 10.000 en tant que 1re langue
+                * Région : ville de Ziguinchor et environ 20 villages dans les environs (Basse-Casamance, Sénégal)
+                * Glottonyme : kriyol
+                * Classification par famille : créole à base lexicale portugaise - Créole afro-portugais de l'Afrique de l'Ouest (anglais : Upper Guinea Creole) - sous-famille continentale
+
+                Référence supplémentaire : [Hommage multilingue au Petit Prince](http://www.unige.ch/lettres/linguistique/prince/)
+

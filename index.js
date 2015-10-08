@@ -40,7 +40,7 @@ app.get(config.server.path + 'data/:id', function(req, res) {
 
         ret = rows[0]
         db.query( 
-            'SELECT language_author.author_id, language_author.language_id, author.name, author.email, author.about ' +
+            'SELECT language_author.author_id, language_author.language_id, author.name, author.website, author.about ' +
             'FROM language_author ' +
             'INNER JOIN author ON language_author.author_id=author.id ' +
             'WHERE language_author.language_id=\'' + req.params.id + '\'',
@@ -55,7 +55,7 @@ app.get(config.server.path + 'data/:id', function(req, res) {
             {
                 authors.push({
                     name: rows[i].name,
-                    email: rows[i].email,
+                    website: rows[i].website,
                     about: rows[i].about
                 });
             }
