@@ -593,3 +593,18 @@ languages:
 
                 Adieu, dit le renard. Voici mon secret. Il est très simple: on ne voit bien qu'avec le coeur. L'essentiel est invisible pour les yeux. 
 
+    catalan:
+        name: "Catalan"
+        glottonym: "Català, Valencià"
+        country: "Catalogne, Pays Valencian, Baléares"
+        family: "Langue romane"
+        speakers: "4.000.000"
+        audio: "catalan.mp3"
+        position: "[[41.813890, 1.804364]]"
+        authors: [brunetti]
+        content: |
+            ### Traduction de l'audio
+            
+            *Traduction de Lisa Brunetti*
+
+            Il était une fois un garçon d'à peu près cinq ans qui s'appelait Paul et qui avait trois animaux de compagnie: une grenouille, une tortue et un chien. Partout où Paul allait il y allait avec ses animaux mais cette soir-là, il allait diner avec sa famille c'est à dire, il y avait son père, sa mère, sa sœur et Paul et il décide d'amener avec lui seulement la grenouille ce qui provoque beaucoup de déception pour le chien et la tortue qui eux aussi voulaient l'accompagner. Arrivés au restaurant, Paul et sa sœur regardent le menu et se rendent compte qu'il s'agit d'un restaurant où certainement tous ceux qui sont là sont d'une classe très aisée. 
