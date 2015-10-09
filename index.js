@@ -83,7 +83,7 @@ app.get(config.server.path + 'data/:id', function(req, res) {
 app.get(config.server.path + 'data', function(req, res) {
     res.contentType('json');
     
-    db.query('SELECT * FROM language', function(err, rows) {
+    db.query('SELECT * FROM language ORDER BY language.name', function(err, rows) {
         languages = [];
 
         for (var i = 0 ; i < rows.length ; i ++) {
