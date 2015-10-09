@@ -114,19 +114,6 @@ languages:
             * [LACITO](http://lacito.vjf.cnrs.fr/ALC/Languages/Ngazidja_popup.htm)
             * [Ressources](http://lacito.vjf.cnrs.fr/archivage/tools/show_text.php?id=crdo-ZDJ_DOG_SOUND&idref=crdo-ZDJ_DOG)
 
-    koyirai:
-        name: "Koyi Rai"
-        country: "Népal"
-        speakers: "2.000"
-        status: "dangers"
-        audio: "koyirai.mp3"
-        authors: [lahaussois]
-        position: "[[27.39746, 86.88224]]"
-        content: |
-            Plus d'information:
-
-            * [LACITO](http://lacito.vjf.cnrs.fr/ALC/Languages/Koyi_Rai_popup.htm)
-            * [Ressources](http://lacito.vjf.cnrs.fr/pangloss/tools/show_text.php?id=crdo-KKT_RECIPE_SOUND&idref=crdo-KKT_RECIPE)
 
     hausa:
         name: "Hausa"
@@ -663,3 +650,24 @@ languages:
             *Traduction de Lisa Brunetti*
 
             Alors, c'est un beau jour d'été et Jean décide d'aller dans un parc avec ses amis. Il met Lara et la tortue dans son seau et ils vont au parc, tous heureux. C'est une belle journée de soleil, il y a beaucoup de papillons qui volent partout, tout en couleur… ils sont tous contents. Mais Lara fait encore la coquine et elle saute du seau pendant que Jean regarde ailleurs. Jean et les autres copains s'éloignent et elle reste seule. Elle veut attraper les papillons et tous les insectes qui volent et alors uop! avec sa langue très longue, elle est sur le point d'attraper un papillon mais, élas, au lieu d'un papillon elle attrape une abeille qui la pique sur sa laide longue langue. 
+
+    koyi_rai:
+        name: "Koyi Rai"
+        glottonym: "Koi"
+        country: "Népal"
+        family: "Tibéto-birman"
+        speakers: "2.000"
+        status: "dangers"
+        position: "[[28.880428, 82.457571]]"
+        audio: "koyirai.mp3"
+        authors: [lahaussois]
+        content: |
+            Plus d'information:
+
+            * [LACITO](http://lacito.vjf.cnrs.fr/ALC/Languages/Koyi_Rai_popup.htm)
+            * [Ressources](http://lacito.vjf.cnrs.fr/pangloss/tools/show_text.php?id=crdo-KKT_RECIPE_SOUND&idref=crdo-KKT_RECIPE)
+
+            ### Traduction de l'audio
+            *Traduction d'Aimée Lahaussois*
+
+            When we cook millet paste, we put water in a pot on the fire. Then we put water in. Then after the water has boiled, the millet flour, from above. The millet flour is put in from above, and then it boils. After it boils, after we put in the millet flour, we must stir it with a spatula. To stir it, we stir it and stir it. We must stir it, and then, after stirring the flour, (phul means flour), it cooks, and then we mix it. After mixing it, we must look, and it cooks. After it cooks, we mix it. The words thulmu and khalmu mean the same thing. After we mix it, it cooks. After it is cooked, we scoop it and eat it. 
