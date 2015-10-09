@@ -608,3 +608,43 @@ languages:
             *Traduction de Lisa Brunetti*
 
             Il était une fois un garçon d'à peu près cinq ans qui s'appelait Paul et qui avait trois animaux de compagnie: une grenouille, une tortue et un chien. Partout où Paul allait il y allait avec ses animaux mais cette soir-là, il allait diner avec sa famille c'est à dire, il y avait son père, sa mère, sa sœur et Paul et il décide d'amener avec lui seulement la grenouille ce qui provoque beaucoup de déception pour le chien et la tortue qui eux aussi voulaient l'accompagner. Arrivés au restaurant, Paul et sa sœur regardent le menu et se rendent compte qu'il s'agit d'un restaurant où certainement tous ceux qui sont là sont d'une classe très aisée. 
+
+    espagnol:
+        name: "Espagnol"
+        glottonym: "Español, Castellano"
+        country: "Espagne, Amérique Latine, Guinée Écuatoriale"
+        family: "Langue romane"
+        speakers: "400.000.000"
+        audio: "espagnol.mp3"
+        position: "[[40.296787, -3.716823]]"
+        authors: [brunetti]
+        content: |
+            
+            L'Espagnol est parlé dans les pays suivants :
+
+            * Espagne
+            * Argentine
+            * Bolivie
+            * Chili
+            * Colombie
+            * Costa Rica
+            * Cuba
+            * République dominicaine
+            * Équateur
+            * Guatemala
+            * Honduras
+            * Mexique
+            * Nicaragua
+            * Panama
+            * Paraguay
+            * Pérou
+            * Porto Rico
+            * Salvador 
+            * Uruguay 
+            * Venezuela
+            * Guinée équatoriale
+
+            ### Traduction de l'audio
+            *Traduction de Lisa Brunetti*
+
+            Il était une fois un garçon qui avait trois amis: un chien très joli, une grenouille et une tortue. Et un jour ce garçon reçoit un gros paquet avec une étiquette et le garçon a l'air très content. Et donc, quand le garçon ouvre le paquet il se surprend beaucoup. Tous ses amis ont l'air très content, sauf la grenouille, qui fait une tête de fâchée. Le garçon voit que dans le paquet il y a une grenouille toute petite, une petite grenouille très sympa qui plait beaucoup au chien et à la tortue, alors qu'apparemment la grenouille grande ne l'apprécie pas trop et fait une tête de fachée. Alors le garçon prend la petite grenouille et la présente à ses amis: "Regardez, celle-ci sera notre nouvelle amie." 
