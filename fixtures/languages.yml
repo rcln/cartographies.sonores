@@ -444,6 +444,7 @@ languages:
             *Transcription de Valentin Vydrin*
 
             -Dhɛkaɔyi do ‘ka =dheglizë do ‘bha bha’ ‘gü, ‘yö ‘nëglɔɔnnë do ‘bha bha =në -ya kë ‘yö yö =dheglizë -dhɛ “dhiʋ̈. ‘Yö “tan –nu oo, bhɛa” –sü -nu oo ‘yö =ya yö- -nu –dhɛ “dhiʋ̈. ‘Ö =yɔɔ mü bha ‘a ‘yö mɛ -nu ‘ö ‘wo =dheglizë ‘gü bha, mɛ ‘bha –nu ‘wo pö ‘mɛ ‘ö ya =ya kë =tɔn “wɔwɔ -sü “gbɩɩ- -wa! =Dimangsii =gban “pɛpɛ ‘ka, yö -zë -yö “wɔwɔ -sü. Kö mɛ ‘bha –nu –wo “wɩ sië ‘mɛ bha –zuu “slʋ̈ʋ̈slʋ̈ =në ‘ö- ‘gü. “Kɛɛ kö mɛ ‘bha –nu –wo “wɩ sië ‘aabhoo, ‘pë =dhɔɔ -a =gban ‘yaa kë -zuu “slʋ̈ʋ̈slʋ̈ ‘ka. ‘Ö =yɔɔ mü kö “pɛdhe =ya –da –dheglizë bha –a ‘gü -mɛ -nu =zinng ‘gü. ‘Mɛ -nu ‘ö ‘wo- pö =dhɛ -zuu “slʋ̈ʋ̈slʋ̈ =në ‘mɛ bha ‘gü, ‘wo gun “pɛɛn “wɛɛ do ‘ka, ‘yö ‘mɛ -nu ‘ö ‘wo- pö =dhɛ ‘mɛ bha ‘wɔn “wɛɛ =në ‘ö- kwi =wlöö -zuu “slʋ̈ʋ̈slʋ̈ ‘yaa mü, woo =de ‘pö ‘wo gun “pɛɛn “wɛɛ do ‘ka. Wo ‘to –a ‘ka “dhʋ̈. Yaa” kö ‘ö- wo sië “dhʋ̈ bha, minë bha –yaa pö yöö nu –dheglizë ‘gü ‘yö =divɛŋ do –ma mü -kö “wɛ kpɛnŋkpɛnŋdhö. –Ya nu ‘yö =ya kë “wɔwɔsü ‘ka =ni; kë “dhʋ̈ kö -wa pö -yö “siʋ̈ -ya ‘wɔn –nu ‘gü. –Zlaan –de ‘pö, -a “yan ‘yaa- kë, -ka –dhɛ ga. –Dhɛkpaɔyi do ‘ka, dhia” “piʋ̈ bha ‘gü ‘yö ö bha ‘në yë -kë -divɛnng ‘dhɔ -dhɛ ‘gü, ‘yö- gba ‘wëë- “gblü do ‘ka. ‘Në bha 'dho 'o wo bha 'yö -kpan we bha –a –bha, “kɛɛ ‘yö ‘wëë- ‘sɛɛnnë’yaa gun =gwëë -kɔ yaa ‘ö ‘në bha ‘ö- -kë mü bha, -a –wɔn ‘gü, ‘yö gɔndënë bha ‘ö dho =dheglizë ‘gü. –A –gɛn –mü -dhɛ kö “dhɛdhɛ =ya –wo.-A –dhɛkpaɔyi ‘dhɛ bha- ‘ka, ‘yö -kë “wɔɔnwɔɔn ‘ka =ni, ‘yö mɛ -nu ‘wo- pö, ‘a “yʋ̈ =dɛɛ -yö mü -dhɛ -oo. ‘Mɛ ‘ö ya =ya kë -tɔn “wɔɔnwɔɔn –dɛɛ “gbɩɩ- -wa! –Wo –to –a pö -sü ‘ka “dhʋ̈ aa, ‘wo dho –dhɛga, -a gbö ‘në do ‘bha –yö nu sië “wɛ -viaviadhö. –Ya –da =dheglizë ‘gü mɛ =gban “pɛpɛ “yan –ya –ya =loo –a –ta. –Dhɛta =ya dɔ dinŋdhö. –Klingkliŋ =ya yö gɔndënë bha- -ta. =Ya ‘gbaannu “zɛnngdhö -dhɛ ‘pë ‘ö =waa- -kplü =në -a wo ‘dhö. –A ga, ‘në bha =ya nu ö dë “dhiʋ̈ -gɔ -yaa pö: N dë, ü bha –divɛnng ü kë- pö ‘a ‘dho- ‘dho- bha, -wa –pö =dhɛ ‘wëë- ga ‘sɛɛnnë ‘yaa ‘dhö. 
+    
     goo:
         name: "Goo"
         authors: [vydrin]
@@ -452,8 +453,59 @@ languages:
         family: "Niger-Congo"
         speakers: "7.000-8.000"
         position: "[[7.5399890, -5.5470800]]"
+        status: "dangers"
+        images:
+            "images/langues/goo/goo1.jpg": ""
+            "images/langues/goo/goo2.jpg": ""
+            "images/langues/goo/goo3.jpg": ""
+            "images/langues/goo/goo4.jpg": ""
+            "images/langues/goo/goo5.jpg": ""
         content: |
-            **Pas de d'information supplémentaire disponible pour le moment.**
+
+            ### Traduction de l'audio
+
+            L’arbre guédama<br />
+            Mes mères, je vais tout gâter!<br />
+            Tu vas tout gâter, oui.<br />
+            Mes pères, je vais tout gâter!<br />
+            Tu vas tout gâter, oui.<br />
+
+            Il était une fois deux femmes qui étaient mariées à un homme. L’homme était cultivateur. Il a fait deux champs de riz à ses deux femmes. La première femme était jalouse contre la deuxième. Elle était sorcière. Quand le riz a poussé, elle c'est transformée en oiseaux et allé gâter le champs de sa co-épouse. En arrivant au champ, elle chantait une chanson :
+
+            L’arbre guédama<br />
+            Mes mères, je vais tout gâter!<br />
+            Tu vas tout gâter, oui.<br />
+            Mes pères, je vais tout gâter!<br />
+            Tu vas tout gâter, oui.
+
+            Un jour, la femme cadette est allée vois son champ. Les féticheurs lui ont dit: « Il faut piler et mouiller le piment. Tu l'amèneras au champ. Il faut le faire très tôt le matin! Car elle va se transformer très tôt aussi ». La jeune femme est arrivée au champ, elle s'est cachée et, tout à coup, elle a vu des oiseaux qui venaient. C'était la première femme qui a quitté sa peau humaine et a fait sa métamorphose. La petite a trouvé cette peau et l’a mis dans l'eau pimentée. Donc, quand l’épouse aînée a mis sa peau sur elle, elle n'a pas supporter, la peau l'a brûlée, car c'était l'eau de piment que la petite y a mise. La grande était obligée de se transformer en arbre qu'on appelle guédama. Jusqu'aujourd'hui cet arbre existe un peu partout dans la forêt d'ici.
+
+            Ça veut dire qu'il y a une limite de tes actions. Il n'est pas bon d'être méchant. 
+
+            ### Transcription de l'audio
+            Gẹẹdààbhà yílí<br />
+            N̂ laálùn bhaán vlankanli wô!<br />
+            Àà vlankanli.<br />
+            N̂ lʌ̂nlùn bhaán vlankanli wô!<br />
+            Àà vlankanli.
+
+            Lẹẹ kpɛì dộ, kọ́ yẹ́ lɔ́nŋ̂ pẹ̀ẹ̀lʌ̂ bhɤ̋ wọ gûn gûlân bhà bhîɔ̂n dộ gɔ̀n. Bhɤ́ àŋ̀ bha gɔ̂ɔ̂n ẹ buu kpɔ̂â àŋ̀ lʌ̀n. Lɔ́nŋ̂ kpâẹ̀ yɛ̂ à bha lệ lʌ́n sɛɛlʌ́n ẹ̀ yɛ̂ à lɔ̀ɔ̀ àâ kɛ̂ɛ̂. Bhɤ́ bhilin yɛ̂ bhɛ̂ɛ̂n tó wọ àŋ̀ pɤ gí-wôâ. Bhɤ́ ẹ wooâ gí. Bhɤ́ lɔ́nŋ̂ kpâẹ̀ yɛ̂ ẹ glaa bhaan gí zîán. Bhɤ́ ẹ̀ lô lɔ́nŋ̂ sɛɛlʌ́n ẹ̀ yɛ̂ gɔ̀n beî, ẹ̀ wàâ bhí, bhɤ́ ẹ̀ glââ bhaan gí. Bhɤ́ à bha bhilin yɛ̂ gí-siẹ. Kɛ́ɛ́ ẹ tô bhɛ̂ɛ́ ká dî gí, yílí fíánlẹ̀ kɤ́ à kwɤŋlɤ́, bhɤ́ ẹ̀ bhilin yɛ̂ bhaan ká zîán. Bhɤ́ bhilin ya wooâ gí yɛ̂, bhɤ́ ya bhaan yílí yɛ̂ ká zîán. Bhɤ́ yà pɤ̂:
+
+            N̂ laálùn bhaán vlankanli wô!<br />
+            Àà vlankanli.<br />
+            N̂ lʌ̂nlùn bhaán vlankanli wô!<br />
+            Àà vlankanli.
+
+            Yaa bhɤ́ yaa kɛ̂ɛ̂, yaa kɛ̂ɛ̂, yaa kɛ̂ɛ̂. Lʌ́nbọ̀ lòâ bhaan gɔ̀n lɛ̂ wàâ kɛ̂ɛ̂ lẹ̀ẹ̀ tété kɤ̂ yẹ̀ bhaan lʌ̀n. Lẹẹ kpɛì dộ ká, bhɤ́ lệ lʌ́n yɛ̂ yà pɤ̂: “Áá! Bhaan bhɔ̂ kɔɔ àâ kɛ̂ɛ̂ lɛ́ɛ̂ bhɛ̂ɛ̂ bhà, kɛ́ɛ́ á lóà lẹẹ bhà gaî”. Bhɤ́ ẹ lóà lẹẹ bhà gaî, bhɤ́ wa pɤ̂ââ lʌ̀n bhí: “Î yàà píẹ́ lɔ́nŋ̂ yɛ̂ bhẹ́ẹ kɛɛ yɛ̂. Kọ́ wún kɤ̂ pɤ̂à î lʌ̀n. Î lóà yɛ̂, í bɛî tîîlʌ́n yí-gọ́ bhàn. Í walá laba líẹ́ kɤ̂ í ló bẹî. Í lóà í blààn-kpɔ́ kọ́ọ́ gbá gî. Kɛ́ɛ́ lɔ́nŋ̂ lûàn yɛ̂, ẹ̀ lùân ẹ gọ́à fóó gí, bhɤ́ yà fóó tô kọ́ọ́ líẹ́, bhɤ́ ẹ̀ daa àŋ̀ kwîî yɛ̂ gí, bhɤ́ ẹ̀ lô bẹî. Ẹ̀ bọâ gọ́á fóó gí, íî fóó yɛ̂ sí kɤ̂ íî daa bɛî yí yɛ̂ wɛ́ɛ̂. Kɤ̂ íî sí kɤ̂ íî yalá à gbóó líẹ́ dɛ̂ɛ̂ò kɤ̂ í bha lówô pẹ́ẹ̀”. Dẹẹ pɔ̂ɔ̂n pɛ́í â pɤ̂â lɔ́nŋ̂ lʌ́n lʌ̀n yaa tó kɛ̂ɛ̂. Lɔ́nŋ̂ kpâẹ̀ ẹ gûn gọ́à buu píẹ́, ẹ lûân táán ká, bhɤ́ yà pɤ̂:
+
+            N̂ laálùn bhaán vlankanli wô!<br />
+            Àà vlankanli.<br />
+            N̂ lʌ̂nlùn bhaán vlankanli wô!<br />
+            Àà vlankanli.
+
+            Yà bhɤ́ a bhà tò buu píẹ́ ẹ bhilin yɛ̂ bhaanlà yílí fíánlẹ̀ ká. À bha kwɛ́yɔ́n ẹ walââ sɛ́nlɤ́ ẹ lôâ. Ya fóó yalââ lẹ̀ẹ̀ â gí yɛ̂, yaa sí yaa sɔɔ bɛî yí wɛ́ɛ̂. Lɔ́nŋ̂lʌ́n a bộ à bha bhálá kɛ̂ɛ̂â, ẹệ lûn kɤ̂ yà fóó yɛ̂ sí kɤ̂ yà daa bhà. Ẹệ lóà daî à bhà. Yẹ̀kẹ̀yẹ́kẹ́ - bɛî yóá kɔ̀ɔ̀ ga. Yaa sí à bhà, yaa zùọ̀. Yàâ tóà pɔ́n tɛ́ɛ́n ká pɤ́ɤ́ kɤ̂ ẹ̀ ló pẹ́ệ. Bhɤ́ ẹ lôâ, bhɤ́ ẹ dalââ kọ́ọ́ líẹ́. Bhɤ́ ẹ glaâ gẹẹdààbhà yílí gî. Gẹẹdààbhà yílí yɛ̂ lɔ́nŋ̂ ẹ gûân dî zuọà yí yɛ̂ ká yɛ̂ à bhẹ́ẹ glaâ yílí wà gẹẹdààbhà yílí kɛɛ yɛ̂ gí yɛ̂.
+
+            Pɔ̂ɔ̂n kɛɛ wà pɤ̂ wún yââ kɛ̂ɛ̂ẹ̀ àâ sʌa kɤ̂ í wún yââ kɛ̂ɛ̂ ẹ sẹlâ î tà. 
 
     saami:
         name: "Saami de Lule"
