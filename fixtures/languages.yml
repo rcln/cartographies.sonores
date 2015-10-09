@@ -6,13 +6,77 @@ languages:
         family: "Langue Mayane"
         position: "[[20.70988, -89.09434]]"
         speakers: "7.500.000"
-        content: | 
-            Nombre de locuteurs : entre 500.000 et 1.000.000
-
         images:
             "images/langues/CodexPeresianus_16.jpg": "Codex de Paris"
             "images/langues/Edzna_Stele21.jpg": "Stèle 21 d'Edzná"
             "images/langues/RitualDeLosBacabes_124.jpg": "Rituel des Bacab"
+        content: | 
+            Nombre de locuteurs : entre 500.000 et 1.000.000
+
+            ### Stèle 21 d'Edzná (Campeche, Mexique)
+
+            <center><img src="images/langues/maya/image002.jpeg" /></center>
+
+            *buluk-ajaw uuklajuun-ch'een? lajuun-ajaw ts'apaj tun ti u-tan-lam*
+            *ukabiiy kaloom? chaak wak-kab-nal ooch?-nal k'u-? kan-kaan-winik*
+
+            [Le] 11 Ahau 17 Ch'en, [en] (le katun) 10 Ahau (/ le 21 août 662), la stèle est érigée au milieu (du katun) sous les auspices de "kaloomte Chac", divin homme céleste d'Edzná au Wak Kab Nal, à "Ooch Nal".
+
+            ### Page 16 du Codex Peresianus (Bibliothèque nationale de France, Paris)
+
+            <center><img src="images/langues/maya/image004.gif" /></center>
+
+            *alay(?) k'u ti ja' way(.) huh-waaj chik'in*
+
+            "On dit que"(?) le dieu (est) dans la doline/cenote d'eau. Pains/tamales à l'iguane (à offrir) à l'ouest.
+
+
+            <center><img src="images/langues/maya/image006.gif" /></center>
+
+            *alay(?) k'u ti yax-che' yax-be ja'-yax-be(.) a?/a[j]?-chaak*
+
+            "On dit que"(?) le dieu (est) dans l'"arbre vert/primordial" (fromager/ceiba), le "chemin vert/primordial". Ton?/celui de l'?averse/Chac, (c'est) le "chemin vert/primordial de l'eau".
+
+            <center><img src="images/langues/maya/image008.gif" /></center>
+
+            *alay(?) [k'u] ti kaan (…)*
+
+            "On dit que"(?) [le dieu] (est) au ciel ...
+
+
+            <center><img src="images/langues/maya/image010.gif" /></center>
+
+            *ch'ak-kab k'u-ja'-ajaw(.) bolon-[y-]ok(?)-te tan*
+
+            Le divin maître de l'eau [Chac] est ravagé. Devant, (c'est) Bolonyocte(?)
+
+            <center><img src="images/langues/maya/image012.gif" /></center>
+
+            *tok … tun-ajaw(?)-haab chaak*
+
+            [Pluie]? brûlant(e) … (c'est une) période de (maîtres? de) pierre, (c'est) Chac.
+
+            ### Page 124 du Ritual de los Bacabes (Bibliothèque de l'Université de Princeton)
+
+            sucil yx cuyum chakanil<br />
+            yx ho ti tzab yal pentac ya<br />
+            lix munach ix catil ahau<br />
+            yx madzil ahau yx pokolpic<br />
+            yx hun pudzub kik hek u lu<br />
+            bul bin yicnal kin patax uinic<br />
+            u ledzic bin yom to yom acan<br />
+            u lubul bin yicnal ix bolon<br />
+            oban u lubul bin yicnal sac<br />
+            dzam pul acat u lubul bin<br />
+            yicnal yx bolon sut ni cal<br />
+            maku chij ych can yocol<br />
+            bin tijx xulub mascabil.<br />
+
+            *sukil ix-kuyum chak'anil[.] Ix-jo'-ti-tsab y-al p[']entak y-al ix-munach ix-katil-ajaw ix-mats'il-ajaw ix-pok'ol-pik ix-jun-puts'ub-k'ik' jek' u-lubul bin y-iknal k'in patax winik u-letz'ik bin y-om to y-om akan[.] U-lubul bin y-iknal ix-bolon-[ajaw.] U-lubul bin y-iknal sak-ts'am-pul-akat[.] U-lubul bin y-iknal ix-bolon-sut-ni[.] Kal mak u-chi' ich kan y-okol bin tiix xulub maskabil(.)*
+
+            (…) les inoffensifs (serpents) ix-kuyum de la savane. Ix Jo Ti Ts'ab ("la dame des cinq crotales"), la fille de femme esclave et fille de femme asservie, Ix Katil Ajaw ("la maîtresse des bassins"), Ix Mats'il Ajaw ("la maîtresse des cuticules(?)"), Ix Pok'ol Pik ("la dame des 8000/innombrables? rebondissements"), Ix Jun Puts'ub K'ik' ("la dame de l'aiguille sanglante"), qui va tomber avec l'homme à la statuette(?) du jour (et) lui lécher sa bave, la bave du gémissement. Elle va tomber avec Ix Bolon Ajaw ("la dame des neuf seigneurs"). Elle va tomber avec Sak Ts'am Pul-Akat ("[la dame] blanc(he) qui mouille (et) lance les glands"). Elle va tomber avec Ix Bolon Sut Ni ("la dame des neuf tours de nez"). Elle ferme puissamment sa bouche parmi le "serpent" (parasites intestinaux?), [qui] va entrer jusqu'au bout de métal? (…)
+
+
 
     langui:
         authors: [dunham]
