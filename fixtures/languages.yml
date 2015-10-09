@@ -648,3 +648,18 @@ languages:
             *Traduction de Lisa Brunetti*
 
             Il était une fois un garçon qui avait trois amis: un chien très joli, une grenouille et une tortue. Et un jour ce garçon reçoit un gros paquet avec une étiquette et le garçon a l'air très content. Et donc, quand le garçon ouvre le paquet il se surprend beaucoup. Tous ses amis ont l'air très content, sauf la grenouille, qui fait une tête de fâchée. Le garçon voit que dans le paquet il y a une grenouille toute petite, une petite grenouille très sympa qui plait beaucoup au chien et à la tortue, alors qu'apparemment la grenouille grande ne l'apprécie pas trop et fait une tête de fachée. Alors le garçon prend la petite grenouille et la présente à ses amis: "Regardez, celle-ci sera notre nouvelle amie." 
+
+    italian:
+        name: "Italien"
+        glottonym: "Italiano"
+        country: "Italie, Liechtenstein, Suisse"
+        family: "Langue romane"
+        speakers: "63.000.000"
+        audio: "italien.mp3"
+        position: "[[42.572531, 13.121745]]"
+        authors: [brunetti]
+        content: |
+            ### Traduction de l'audio
+            *Traduction de Lisa Brunetti*
+
+            Alors, c'est un beau jour d'été et Jean décide d'aller dans un parc avec ses amis. Il met Lara et la tortue dans son seau et ils vont au parc, tous heureux. C'est une belle journée de soleil, il y a beaucoup de papillons qui volent partout, tout en couleur… ils sont tous contents. Mais Lara fait encore la coquine et elle saute du seau pendant que Jean regarde ailleurs. Jean et les autres copains s'éloignent et elle reste seule. Elle veut attraper les papillons et tous les insectes qui volent et alors uop! avec sa langue très longue, elle est sur le point d'attraper un papillon mais, élas, au lieu d'un papillon elle attrape une abeille qui la pique sur sa laide longue langue. 
