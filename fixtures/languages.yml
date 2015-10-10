@@ -486,7 +486,7 @@ languages:
         family: "Tchadique"
         speakers: "300.000"
         audio: "zaar.mp3"
-        position: "[[5.6958548, 15.9552997]]"
+        position: "[[8.054510, 6.676641]]"
         authors: [caron]
         content: |
             ### Traduction de l'audio :  Deux méchants hommes
@@ -629,6 +629,7 @@ languages:
         family: "Niger-Congo"
         speakers: "7.000-8.000"
         position: "[[7.5399890, -5.5470800]]"
+        audio: "goo.mp3"
         status: "dangers"
         images:
             "images/langues/goo/goo1.jpg": ""
