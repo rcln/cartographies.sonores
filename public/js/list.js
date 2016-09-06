@@ -13,15 +13,16 @@ var LanguageList = (function (Stores, Actions, Dispatcher) {
 
         render: function render() {
             var props = this.props;
-
+            var column_ids = ["Langue", "Glottonyme", "Pays", "Famille", "Locuteurs"]; //needed for responsive table 
             var items = this.props.items.map(function (v, col) {
                 if (props.header) return React.createElement(
-                    "th",
-                    { key: col },
-                    v
-                );else return React.createElement(
+                        "th",
+                        { key: col },
+                        v
+                    );
+                else return React.createElement(
                     "td",
-                    { className: "status-" + props.status, key: col },
+                    { className: "status-" + props.status, key: col, "data-title": column_ids[col] },
                     React.createElement(
                         Link,
                         { to: "langue", params: { langue_id: props.item_id } },
@@ -30,7 +31,7 @@ var LanguageList = (function (Stores, Actions, Dispatcher) {
                 );
             }).toArray();
 
-            var style = { display: props.display ? 'table-row' : 'none' };
+            var style = props.display? {} : { display: 'none' };
             return React.createElement(
                 "tr",
                 { style: style },
@@ -95,17 +96,54 @@ var LanguageList = (function (Stores, Actions, Dispatcher) {
                 return React.createElement(SearchCell, { key: i, callback: cb });
             }).toArray();
 
-            return React.createElement(
-                "table",
-                { className: "table" },
-                React.createElement(TableRow, { header: true, items: props.column_names, display: true }),
-                React.createElement(
-                    "tr",
-                    null,
-                    search_row
-                ),
-                rows
-            );
+            return  React.createElement(
+                        'form',
+                        null,
+                        React.createElement(
+                            'div',
+                            {className: 'mdl-textfield mdl-js-textfield"'},
+                            React.createElement(
+                                'label', 
+                                {'htmlFor': 'rechercher', className: 'mdl-textfield__label'},
+                                React.createElement(
+                                    'i',
+                                    {className: 'material-icons'},
+                                    'search'
+                                )
+                            ),
+                            React.createElement(
+                                'div',
+                                {className: 'mdl-textfield'},
+                                React.createElement(
+                                    'input', 
+                                    {id: 'rechercher', type: 'text', className: 'search mdl-textfield__input'}
+                                ),
+                                React.createElement(
+                                    'label', 
+                                    {'htmlFor': 'rechercher', className: 'mdl-textfield__label'},
+                                    'Rechercher'
+                                )
+                            )
+                        ),
+                        React.createElement(
+                            "div",
+                            {className: "table-responsive-vertical shadow-z-1"},
+                            React.createElement(
+                                "table",
+                                { id: "table", className: "table table-hover table-mc-light-blue table-bordered" },
+                                React.createElement(
+                                    "thead",
+                                    null,
+                                    React.createElement(TableRow, { header: true, items: props.column_names, display: true })
+                                ),
+                                React.createElement(
+                                    "tbody",
+                                    null,
+                                    rows
+                                )
+                            )
+                        )
+                    );
         },
 
         _filter: function _filter(column, value) {
