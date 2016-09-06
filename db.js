@@ -1,5 +1,6 @@
 var mysql      = require('mysql');
 var config     = require('./config');
+console.warn("Mysql module loaded.");
 
 var param = {
   host     : config.db.host,
@@ -15,6 +16,7 @@ var connection = mysql.createConnection(param);
  
 connection.connect(function(err) {
     if (err) throw err;
+    console.warn("Connected to database.");
 });
 
 module.exports = connection;
