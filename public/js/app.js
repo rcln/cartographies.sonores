@@ -76,7 +76,7 @@ $(function () {
                         { className: 'header black-bg mdl-layout__header mdl-layout__header' },
                         React.createElement(
                             'div',
-                            {className: 'mdl-layout__header-row'},
+                            {className: 'mdl-layout__header-row', style: {"padding-right": "0px"}},
                             React.createElement(
                                 'span',
                                 {id: 'header-title', className: 'mdl-layout-title'},
@@ -96,7 +96,7 @@ $(function () {
                              ),
                              React.createElement(
                                  'nav',
-                                 {id: 'header-logo', className: 'mdl-navigation mdl-cell--hide-tablet mdl-cell--hide-phone' },
+                                 {className: 'header-logo mdl-navigation mdl-cell--hide-tablet mdl-cell--hide-phone' },
                                  React.createElement('img', { src: 'images/logo_labex.jpg' }),
                                  React.createElement('img', { src: 'images/logo_cnrs.png' }),
                                  React.createElement('img', { src: 'images/logo_lipn.png' }),
@@ -105,14 +105,11 @@ $(function () {
                         ),
                         React.createElement(
                             'div',
-                            {className: 'mdl-layout__header-row mdl-cell--hide-desktop'},
-                             React.createElement(
-                                 'div',
-                                 {className: 'mdl-layout-spacer'}
-                             ),
+                            {className: 'header-logo center-logo mdl-layout__header-row mdl-cell--hide-desktop', 
+                                style: {'background-color': 'white'}},
                              React.createElement(
                                  'nav',
-                                 {id: 'header-logo', className: 'mdl-navigation' },
+                                 {className: 'header-logo mdl-navigation'},
                                  React.createElement('img', { src: 'images/logo_labex.jpg' }),
                                  React.createElement('img', { src: 'images/logo_cnrs.png' }),
                                  React.createElement('img', { src: 'images/logo_lipn.png' }),
