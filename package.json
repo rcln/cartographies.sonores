@@ -20,7 +20,8 @@
     "express": "^4.11.1",
     "jquery-colorbox": "^1.6.3",
     "mysql": "^2.8.0",
-    "swig": "^1.4.2"
+    "swig": "^1.4.2",
+    "mongoose": "~4.4.12"
   },
   "devDependencies": {
     "connect-livereload": "^0.5.3",
@@ -34,6 +35,7 @@
     "grunt-nodemon": "^0.4.0",
     "grunt-open": "^0.2.3",
     "load-grunt-tasks": "^3.3.0",
-    "matchdep": "^1.0.0"
+    "matchdep": "^1.0.0",
+    "pow-mongoose-fixtures": "~0.3.0"
   }
 }
