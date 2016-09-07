@@ -97,31 +97,34 @@ var LanguageList = (function (Stores, Actions, Dispatcher) {
             }).toArray();
 
             return  React.createElement(
-                        'form',
+                        'div',
                         null,
                         React.createElement(
                             'div',
-                            {className: 'mdl-textfield mdl-js-textfield"'},
-                            React.createElement(
-                                'label', 
-                                {'htmlFor': 'rechercher', className: 'mdl-textfield__label'},
-                                React.createElement(
-                                    'i',
-                                    {className: 'material-icons'},
-                                    'search'
-                                )
-                            ),
+                            null,
                             React.createElement(
                                 'div',
                                 {className: 'mdl-textfield'},
                                 React.createElement(
-                                    'input', 
-                                    {id: 'rechercher', type: 'text', className: 'search mdl-textfield__input'}
+                                    'label', 
+                                    {'htmlFor': 'rechercher', 
+                                        className: 'mdl-button mdl-js-button mdl-button--icon mdl-button--raised mdl-button--colored'},
+                                    React.createElement(
+                                        'i',
+                                        {className: 'material-icons'},
+                                        'search'
+                                    )
                                 ),
                                 React.createElement(
-                                    'label', 
-                                    {'htmlFor': 'rechercher', className: 'mdl-textfield__label'},
-                                    'Rechercher'
+                                    'input', 
+                                    {id: 'rechercher', 
+                                        type: 'text', 
+                                        placeholder: 'Rechercher', 
+                                        className: 'search mdl-textfield__input',
+                                        onKeyUp: function(e){ 
+                                            searchKeyUp(e);     
+                                        }
+                                    }
                                 )
                             )
                         ),
