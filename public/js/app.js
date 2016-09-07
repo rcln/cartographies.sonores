@@ -10,7 +10,6 @@ $(function () {
 
     $.get('data', function (languages) {
         Stores.language.load(languages);
-
         var ListView = React.createClass({
             displayName: 'ListView',
 
@@ -139,6 +138,13 @@ $(function () {
 
         ReactRouter.run(routes, function (Handler) {
             React.render(React.createElement(Handler, null), document.getElementById('container'));
+            document.languages_search = [];
+            $('#table tbody tr').each(function(current_key, current){
+                document.languages_search[current_key] = {'id': $(current).attr("data-reactid"), 'text': '' };
+                $(current).find("td").each(function(v, e){ 
+                    document.languages_search[current_key]['text'] += $(e).text().toLowerCase().replace(/[,.]/,"") + " ";
+                })
+            });
         });
     });
 });
