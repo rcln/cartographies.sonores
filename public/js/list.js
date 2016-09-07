@@ -121,7 +121,7 @@ var LanguageList = (function (Stores, Actions, Dispatcher) {
                                         type: 'text', 
                                         placeholder: 'Rechercher', 
                                         className: 'search mdl-textfield__input',
-                                        onKeyUp: function(e){ 
+                                        onInput: function(e){ 
                                             searchKeyUp(e);     
                                         }
                                     }
