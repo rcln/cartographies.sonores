@@ -141,8 +141,8 @@ $(function () {
             document.languages_search = [];
             $('#table tbody tr').each(function(current_key, current){
                 document.languages_search[current_key] = {'id': $(current).attr("data-reactid"), 'text': '' };
-                $(current).find("td").each(function(v, e){ 
-                    document.languages_search[current_key]['text'] += $(e).text().toLowerCase().replace(/[,.]/,"") + " ";
+                $(current).find("td a").each(function(v, e){ 
+                    document.languages_search[current_key]['text'] += e.innerText.toLowerCase().replace(/[,.]/g,"") + " ";
                 })
             });
         });
