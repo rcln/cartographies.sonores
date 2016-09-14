@@ -18,16 +18,15 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
                 if (website != null) website = React.createElement(
                     'a',
                     { href: website },
-                    ' ',
-                    React.createElement('span', { className: 'glyphicon glyphicon-globe' })
+                    React.createElement('i', { className: 'material-icons'}, 'language')
                 );
 
                 if (author.get('about').length > 0) {
                     return React.createElement(
                         'div',
-                        { key: i },
+                        { key: i, className: 'mdl-card__supporting-text' },
                         React.createElement(
-                            'h4',
+                            'p',
                             null,
                             name,
                             ' ',
@@ -37,9 +36,9 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
                     );
                 } else return React.createElement(
                     'div',
-                    { key: i },
+                    { key: i,  className: 'mdl-card__supporting-text'},
                     React.createElement(
-                        'h4',
+                        'p',
                         null,
                         name,
                         ' ',
@@ -52,9 +51,13 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
                 'div',
                 { className: 'showback' },
                 React.createElement(
-                    'h3',
-                    null,
-                    'Auteur'
+                    'div',
+                    {className: 'mdl-card__title'},
+                    React.createElement(
+                        'h3',
+                        {className: 'mdl-card__title-text'},
+                        'Auteur'
+                    )
                 ),
                 array
             );
@@ -67,19 +70,27 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
         render: function render() {
             if (this.props.audio != null) {
                 return React.createElement(
-                    'div',
-                    { className: 'showback' },
-                    React.createElement(
-                        'h3',
+                        'div',
                         null,
-                        'Audio'
-                    ),
-                    React.createElement(
-                        'audio',
-                        { controls: 'controls' },
-                        React.createElement('source', { src: "audio/" + this.props.audio, type: 'audio/mpeg' })
-                    )
-                );
+                        React.createElement(
+                            'div',
+                            { className: 'showback mdl-card__title' },
+                            React.createElement(
+                                'h3',
+                                { className: 'mdl-card__title-text' },
+                                'Audio'
+                            )
+                        ),
+                        React.createElement(
+                            'div',
+                            { className: 'mdl-card__actions mdl-card--border'},
+                            React.createElement(
+                                'audio',
+                                { controls: 'controls' },
+                                React.createElement('source', { src: "audio/" + this.props.audio, type: 'audio/mpeg' })
+                            )
+                        )
+                    );
             } else {
                 return React.createElement('div', null);
             }
@@ -175,9 +186,13 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
                 'div',
                 { className: 'showback' },
                 React.createElement(
-                    'h3',
-                    null,
-                    'Détails'
+                    'div',
+                    {className: 'mdl-card__title'},
+                    React.createElement(
+                        'h3',
+                        {className: 'mdl-card__title-text'},
+                        'Détails'
+                    )
                 ),
                 React.createElement(
                     'ul',
@@ -241,9 +256,13 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
                     'div',
                     { className: 'showback' },
                     React.createElement(
-                        'h3',
-                        null,
-                        'Localisation'
+                        'div',
+                        {className: 'mdl-card__title'},
+                        React.createElement(
+                            'h3',
+                            {className: 'mdl-card__title-text'},
+                            'Localisation'
+                        )
                     ),
                     React.createElement(MapViewLeaflet, { positions: this.props.positions, status: this.props.status })
                 );
@@ -288,7 +307,16 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
                         { className: 'mdl-layout__content' },
                         React.createElement(
                             Link,
-                            { to: 'app', className: 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent' },
+                            { to: 'app'},
+                            React.createElement(
+                                'button',
+                                {className: 'mdl-button mdl-js-button mdl-button--icon mdl-button--accent'},
+                                React.createElement(
+                                    'i',
+                                    {className: 'material-icons' },
+                                    'chevron_left'
+                                )
+                            ),
                             'Retourner à la liste des langues'
                         ),
                         React.createElement(
