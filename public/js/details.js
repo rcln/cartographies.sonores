@@ -49,7 +49,7 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
 
             return React.createElement(
                 'div',
-                { className: 'showback' },
+                { className: 'showback mdl-card mdl-card--expand mdl-shadow--2dp mdl-cell mdl-cell--12-col' },
                 React.createElement(
                     'div',
                     {className: 'mdl-card__title'},
@@ -71,7 +71,7 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
             if (this.props.audio != null) {
                 return React.createElement(
                         'div',
-                        null,
+                        { className: 'mdl-card mdl-card--expand mdl-shadow--2dp mdl-cell mdl-cell--12-col' },
                         React.createElement(
                             'div',
                             { className: 'showback mdl-card__title' },
@@ -131,11 +131,15 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
             }).toArray();
             return React.createElement(
                 'div',
-                { className: 'showback' },
+                { className: 'showback mdl-card mdl-card--expand mdl-shadow--2dp mdl-cell mdl-cell--12-col' },
                 React.createElement(
-                    'h3',
-                    null,
-                    'Galerie'
+                    'div',
+                    { className: 'mdl-card__title'},
+                    React.createElement(
+                        'h3',
+                        { className: 'mdl-card__title-text'},
+                        'Galerie'
+                    )
                 ),
                 React.createElement(
                     'div',
@@ -184,7 +188,7 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
 
             return React.createElement(
                 'div',
-                { className: 'showback' },
+                { className: 'showback mdl-card mdl-card--expand mdl-shadow--2dp mdl-cell mdl-cell--12-col' },
                 React.createElement(
                     'div',
                     {className: 'mdl-card__title'},
@@ -254,7 +258,7 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
             if (this.props.positions != null) {
                 return React.createElement(
                     'div',
-                    { className: 'showback' },
+                    { className: 'showback mdl-card mdl-card--expand mdl-shadow--2dp mdl-cell mdl-cell--12-col' },
                     React.createElement(
                         'div',
                         {className: 'mdl-card__title'},
@@ -338,7 +342,7 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
                             ),
                             React.createElement(
                                 'div',
-                                { className: 'mdl-card mdl-card--expand mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--3-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone' },
+                                { className: 'mdl-cell mdl-cell--12-col mdl-cell--3-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone' },
                                 React.createElement(AudioView, { audio: this.state.audio }),
                                 React.createElement(MapView, { positions: this.state.positions, status: this.state.status }),
                                 React.createElement(DetailView, { data: this.state.data }),
