@@ -308,7 +308,7 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
                     null,
                     React.createElement(
                         'div',
-                        { className: 'mdl-layout__content' },
+                        { className: 'mdl-layout__content', style: {width: '100%'}  },
                         React.createElement(
                             Link,
                             { to: 'app'},
