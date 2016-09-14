@@ -298,11 +298,15 @@ var LanguageDetails = (function (Stores, Actions, Dispatcher) {
                                 'div',
                                 { className: 'mdl-card mdl-card--expand mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone' },
                                 React.createElement(
-                                    'h3',
-                                    null,
-                                    this.state.name
+                                    'div',
+                                    {className: 'mdl-card__title'},
+                                    React.createElement(
+                                        'h3',
+                                        {className: 'mdl-card__title-text'},
+                                        this.state.name
+                                    )
                                 ),
-                                React.createElement('div', { className: 'tiny_image', dangerouslySetInnerHTML: { __html: marked(this.state.content) } })
+                                React.createElement('div', { className: 'tiny_image mdl-card__supporting-text', dangerouslySetInnerHTML: { __html: marked(this.state.content) } })
                             ),
                             React.createElement(
                                 'div',
