@@ -75,6 +75,19 @@ $(function () {
                         { className: 'header black-bg mdl-layout__header mdl-layout__header' },
                         React.createElement(
                             'div',
+                            {className: 'header-logo center-logo mdl-layout__header-row mdl-cell--hide-desktop', 
+                                style: {'background-color': 'white'}},
+                             React.createElement(
+                                 'nav',
+                                 {className: 'header-logo header-logo-large mdl-navigation'},
+                                 React.createElement('img', { src: 'images/logo_labex.jpg' }),
+                                 React.createElement('img', { src: 'images/logo_cnrs.png' }),
+                                 React.createElement('img', { src: 'images/logo_lipn.png' }),
+                                 React.createElement('img', { src: 'images/logo_paris13.jpg' }) 
+                             )
+                        ),
+                        React.createElement(
+                            'div',
                             {className: 'mdl-layout__header-row', style: {"padding-right": "0px"}},
                             React.createElement(
                                 'span',
@@ -93,26 +106,18 @@ $(function () {
                                  'div',
                                  {className: 'mdl-layout-spacer'}
                              ),
+
                              React.createElement(
-                                 'nav',
-                                 {className: 'header-logo mdl-navigation mdl-cell--hide-tablet mdl-cell--hide-phone' },
-                                 React.createElement('img', { src: 'images/logo_labex.jpg' }),
-                                 React.createElement('img', { src: 'images/logo_cnrs.png' }),
-                                 React.createElement('img', { src: 'images/logo_lipn.png' }),
-                                 React.createElement('img', { src: 'images/logo_paris13.jpg' }) 
-                             )
-                        ),
-                        React.createElement(
-                            'div',
-                            {className: 'header-logo center-logo mdl-layout__header-row mdl-cell--hide-desktop', 
-                                style: {'background-color': 'white'}},
-                             React.createElement(
-                                 'nav',
-                                 {className: 'header-logo mdl-navigation'},
-                                 React.createElement('img', { src: 'images/logo_labex.jpg' }),
-                                 React.createElement('img', { src: 'images/logo_cnrs.png' }),
-                                 React.createElement('img', { src: 'images/logo_lipn.png' }),
-                                 React.createElement('img', { src: 'images/logo_paris13.jpg' }) 
+                                'div',
+                                {className: 'header-logo-container'},
+                                React.createElement(
+                                    'nav',
+                                    {className: 'header-logo mdl-navigation mdl-cell--hide-tablet mdl-cell--hide-phone' },
+                                    React.createElement('img', { src: 'images/logo_labex.jpg' }),
+                                    React.createElement('img', { src: 'images/logo_cnrs.png' }),
+                                    React.createElement('img', { src: 'images/logo_lipn.png' }),
+                                    React.createElement('img', { src: 'images/logo_paris13.jpg' }) 
+                                )
                              )
                         )
                     ),

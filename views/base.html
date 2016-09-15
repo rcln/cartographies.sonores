@@ -32,17 +32,27 @@
             text-decoration: none;
             text-transform: uppercase;
         }
-        .header-logo {
+        .header-logo-container {
             background-color: white;
-            padding: 10px 25px 10px 10px !important;
+        
+        }
+        nav.header-logo {
+            background-color: white;
+            margin-left: 20px !important;
+            margin-right: 50px !important;
         }
         .center-logo {
             padding: 0px;
             justify-content: center;
+            min-height: 65px;
         }
         .header-logo img {
             max-height: 40px;
-            margin-left: 10px;
+            margin: 5px;
+        }
+        .header-logo.header-logo-large img {
+            max-height: 30px;
+            margin: 10px;
         }
         .leaflet-map {
           height: 400px;
