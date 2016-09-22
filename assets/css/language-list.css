@@ -1,0 +1,10 @@
+tr.vivante > td,
+tr.vivante > td > a
+{
+    color: rgb(83,109,254) !important;
+}
+tr.dangers > td, 
+tr.dangers > td > a
+{
+    color: #D50000 !important;
+}

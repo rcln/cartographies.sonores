@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <base href="/">
+    <title>Cartographies Sonores</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 1. Load libraries -->
+     <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+    <!-- Material Design -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.blue_grey-indigo.min.css" />
+    <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+    <!-- Custom -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+  <!-- 3. Display the application -->
+  <body>
+      <div class=" mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-drawer-button">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row mdl-cell--hide-desktop">
+                <nav class="mdl-navigation">
+                    <img src="assets/images/logo_labex.jpg">
+                    <img src="assets/images/logo_cnrs.png">
+                    <img src="assets/images/logo_lipn.png">
+                    <img src="assets/images/logo_paris13.jpg">
+                </nav>
+            </div>
+            <div class="mdl-layout__header-row">
+                <span id="main-title" class="mdl-layout-title"></span>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation mdl-cell--hide-tablet mdl-cell--hide-phone">
+                    <img src="assets/images/logo_labex.jpg">
+                    <img src="assets/images/logo_cnrs.png">
+                    <img src="assets/images/logo_lipn.png">
+                    <img src="assets/images/logo_paris13.jpg">
+                </nav>
+            </div>
+        </header>
+        <main class="mdl-layout__content">
+            <cartographies-sonores>Loading...</cartographies-sonores>
+        </main>
+    </div>
+    <script>
+      try{  
+          var main_title = document.getElementById("main-title");
+          main_title.innerText = document.getElementsByTagName('title')[0].innerText; 
+      }catch(err){ console.error(err); }
+    </script>
+  </body>
+</html>

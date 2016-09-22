@@ -1,5 +1,5 @@
 node_modules
-bower_components
 *.swp
 config.json
-dist
+typings
+npm-debug.log

@@ -1,0 +1,17 @@
+.mdl-layout__header {
+    color: rgb(96,125,139) !important;
+    background-color: white !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.mdl-layout__header img {
+    max-height: 40px;
+    margin: 5px;
+}
+.mdl-layout__header .mdl-cell--hide-desktop {
+    margin: auto;
+}
+.mdl-layout__header .mdl-cell--hide-desktop img {
+    max-height: 30px;
+    margin: 10px;
+}
