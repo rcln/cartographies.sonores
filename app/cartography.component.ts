@@ -16,7 +16,7 @@ export class CartographyComponent implements OnInit {
         Array.prototype.forEach.call(map_containers, function(e){
             var map = L.map(e).setView([51.505, -0.09], 2);
             L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}', {
-                minZoom: 2,
+                minZoom: 1,
                 maxZoom: 10,
                 subdomains:['mt0','mt1','mt2','mt3']
             }).addTo(map);
