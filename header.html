@@ -1,20 +1,14 @@
 <html>
   <head>
-    <script>document.write('<base href="' + document.location + '" />');</script>
+    <base href="/cartographies/" />
     <title>Cartographies Sonores</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 1. Load libraries -->
-     <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/reflect-metadata/Reflect.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
     <!-- Leaflet -->
     <link rel="stylesheet" href="//unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
     <script src="//unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
-    <script src="assets/js/leaflet.markercluster-src.js"></script>
+    <!-- script src="assets/js/leaflet.markercluster-src.js"></script-->
     <!-- Material Design -->
     <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
@@ -22,13 +16,19 @@
     <script defer src="//code.getmdl.io/1.2.0/material.min.js"></script>
     <!-- Custom -->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/MarkerCluster.css">
-    <link rel="stylesheet" href="assets/css/MarkerCluster.Default.css">
-    <!-- 2. Configure SystemJS -->
-    <script src="systemjs.config.js"></script>
-    <script>
-      System.import('app').catch(function(err){ console.error(err); });
-    </script>
+    <link rel="stylesheet" href="assets/css/cartography.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/language-list.css">
+    <link rel="stylesheet" href="assets/css/table-responsibe.css">
+    <link rel="stylesheet" href="assets/css/colorbox.css">
+    <!-- link rel="stylesheet" href="assets/css/MarkerCluster.css">
+    <link rel="stylesheet" href="assets/css/MarkerCluster.Default.css"-->
+    <!-- demo -->
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/list_search.js"></script>
+    <script src="assets/js/markdown.min.js"></script>
+    <script src="assets/js/jquery.colorbox-min.js"></script>
+    <script src="assets/js/recorder.js"></script>
   </head>
   <!-- 3. Display the application -->
   <body>
@@ -54,14 +54,3 @@
             </div>
         </header>
         <main class="mdl-layout__content">
-            <cartographies-sonores>Loading...</cartographies-sonores>
-        </main>
-    </div>
-    <script>
-      try{  
-          var main_title = document.getElementById("main-title");
-          main_title.innerText = document.getElementsByTagName('title')[0].innerText; 
-      }catch(err){ console.error(err); }
-    </script>
-  </body>
-</html>

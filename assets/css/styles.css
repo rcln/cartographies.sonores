@@ -1,3 +1,19 @@
+audio {
+    width: 95%;
+    margin: auto;
+}
+
+div#language-content img {
+    max-width: 97%;
+}
+
+#images div a {
+    max-width: 100px;
+    margin: 0px;
+}
+#images div a img {
+    max-width: 100px;
+}
 .mdl-layout__header {
     color: rgb(96,125,139) !important;
     background-color: white !important;
@@ -15,3 +31,30 @@
     max-height: 30px;
     margin: 10px;
 }
+.leaflet-map-detail {
+  height: 200px;
+}
+
+div#contrib-map.leaflet-map-detail {
+    margin: auto;
+    height: 270px;
+    width: 300px;
+}
+
+audio#audio-contrib {
+    width: 60%;
+    margin: 10px;
+}
+.audio-controls, .contrib {
+    text-align: center;
+}
+
+.contrib.mdl-card__actions {
+    text-align: right;
+}
+
+.contrib.mdl-card__actions p {
+    text-align: center;
+}
+
+
