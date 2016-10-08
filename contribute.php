@@ -7,7 +7,7 @@
 </a>
 
 <section class="mdl-grid">
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--6-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
     <div class="mdl-card__title">
         <h3 id="name" class="mdl-card__title-text">Donnez-nous votre histoire</h3>
     </div>
@@ -69,7 +69,7 @@
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <input class="mdl-textfield__input" type="text" id="nom" name="nom">
             <label class="mdl-textfield__label" for="nom">Nom (Facultatif)</label>
-        </div>  
+        </div><br /> 
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <input class="mdl-textfield__input" pattern="-?[0-9]*(\.[0-9]+)?" type="text" id="age" name="age">
             <label class="mdl-textfield__label" for="age">Âge (Facultatif)</label>
@@ -123,7 +123,7 @@
                     var reader = new FileReader();
                     reader.onload = function(event){
                         var fd = {};
-                        fd["fname"] = btoa($("#language-maternelle").val() + Math.random() + document.latlng_contrib.lat + document.latlng_contrib.lng );
+                        fd["fname"] = Math.random() + document.latlng_contrib.lat + document.latlng_contrib.lng;
                         fd["data"] = event.target.result;
                         fd["language"] = $("#language-maternelle").val();
                         fd["name"] = $("#nom").val();

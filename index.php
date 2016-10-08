@@ -11,12 +11,12 @@ var LGreyIcon = L.icon({
 });
 function load_cartography(languages){
         var map_container = document.getElementsByClassName('cartography')[0];
-        this.map = L.map(map_container).setView([40.505, -0.09], 2);
+        document.map = L.map(map_container).setView([40.505, -0.09], 2);
         L.tileLayer('//{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}', {
             minZoom: 1,
             maxZoom: 10,
             subdomains:['mt0','mt1','mt2','mt3']
-        }).addTo(this.map);
+        }).addTo(document.map);
         //var markers_danger = L.markerClusterGroup({ chunkedLoading: true });
         //var markers_live = L.markerClusterGroup({ chunkedLoading: true });
         for(var i in languages){
@@ -37,7 +37,7 @@ function load_cartography(languages){
             }
             marker_options["_language_id"] = language.id;
 
-            var marker = L.marker(L.latLng(lat, lng), marker_options).addTo(this.map);
+            var marker = L.marker(L.latLng(lat, lng), marker_options).addTo(document.map);
             if (typeof(language.audio) != 'undefined') {
                 var audio_id = 'audio-player-' + language.id;
                 var audio = '<hr /><div><audio controls="controls" id="' + audio_id + '" name="' + audio_id + '">' + '<source src="services/audio/' + language.audio + '" type="audio/mpeg"/>' + '</audio></div>';
@@ -48,6 +48,8 @@ function load_cartography(languages){
             var popup = marker.bindPopup('<div>' + '<a href="details/'+ language.id +'" >' + '<b>' + language.name + '</b>' + ' - Plus d\'information' + '</a>' + audio + '</div>');
             this.markers[language.id] = marker;
         }
+
+        contributions();
 }
 function load_list(languages){
         var html_list = '';
@@ -105,7 +107,7 @@ function load_list(languages){
 <script>
 $(function(){
     $.getJSON( "services/languages.json", function( languages ) {   
-        load_cartography(languages);    
+        load_cartography(languages); 
         load_list(languages);
         $(".language-item").click(function(){
             location.href = "details/" + this.id;
@@ -113,4 +115,25 @@ $(function(){
     });
 });
 </script>
+<script>
+    function contributions(){
+        document.markers_contrib = [];
+        $.getJSON("contributions/", function(data){
+            console.log(data);
+            var marker_options = { icon: LGreyIcon };
+            for(var d in data){
+                var contribution = data[d];
+                var position = contribution.position[0];
+                var lat = position[0];
+                var lng = position[1];
+                var marker = L.marker(L.latLng(lat, lng), marker_options).addTo(document.map);
+                //var audio = '<hr /><div><audio controls="controls" id="' + contribution.id + '" name="' + contribution.id + '">' + '<source src="services/contrib/' + contribution.audio + '" type="audio/mpeg"/>' + '</audio></div>';
+                //var popup = marker.bindPopup('<div>' + '<b>' + contribution.language + '</b>' + audio + '</div>');
+                document.markers_contrib[contribution.id] = marker;
+            }
+            console.log(document.markers_contrib);
+        });
+    }
+</script>
+
 <?php require("footer.html"); ?>
